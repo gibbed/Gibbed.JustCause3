@@ -137,6 +137,11 @@ namespace Gibbed.JustCause3.SmallUnpack
                         Console.WriteLine("{1:D4}/{2:D4} => {0}", entry.Name, counter, totalCount);
                     }
 
+                    if (entry.Offset == 0)
+                    {
+                        continue;
+                    }
+
                     if (listing == false)
                     {
                         var parentOutputPath = Path.GetDirectoryName(outputPath);

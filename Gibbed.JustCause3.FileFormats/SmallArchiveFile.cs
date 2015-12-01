@@ -148,6 +148,11 @@ namespace Gibbed.JustCause3.FileFormats
             {
                 Write(output, this, endian);
             }
+
+            public override string ToString()
+            {
+                return string.Format("{0} @ {1:X} ({2} bytes)", this.Name, this.Offset, this.Size);
+            }
         }
     }
 }
