@@ -22,7 +22,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
+using System.Text.RegularExpressions;
+using System.Xml;
 using Gibbed.IO;
 using Gibbed.JustCause3.FileFormats;
 using NDesk.Options;
@@ -39,17 +42,17 @@ namespace Gibbed.JustCause3.SmallUnpack
         public static void Main(string[] args)
         {
             bool verbose = false;
+            string filterPattern = null;
             bool overwriteFiles = false;
-            bool listing = false;
-            bool useFullPaths = false;
+            bool dontUseFullPaths = false;
             bool showHelp = false;
 
             var options = new OptionSet()
             {
                 { "v|verbose", "be verbose (list files)", v => verbose = v != null },
-                { "l|list", "just list files (don't extract)", v => listing = v != null },
+                { "f|filter=", "only extract files using pattern", v => filterPattern = v },
                 { "o|overwrite", "overwrite files if they already exist", v => overwriteFiles = v != null },
-                { "f|full-path", "use full paths", v => useFullPaths = v != null },
+                { "nf|no-full-paths", "don't extract using full paths", v => dontUseFullPaths = v != null },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
 
@@ -78,9 +81,13 @@ namespace Gibbed.JustCause3.SmallUnpack
             }
 
             string inputPath = extra[0];
-            string baseOutputPath = extra.Count > 1
-                                        ? extra[1]
-                                        : Path.ChangeExtension(inputPath, null) + "_unpack";
+            string outputPath = extra.Count > 1 ? extra[1] : Path.ChangeExtension(inputPath, null) + "_unpack";
+
+            Regex filter = null;
+            if (string.IsNullOrEmpty(filterPattern) == false)
+            {
+                filter = new Regex(filterPattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            }
 
             using (var temp = File.OpenRead(inputPath))
             using (var cool = CreateCoolArchiveStream(temp))
@@ -90,79 +97,180 @@ namespace Gibbed.JustCause3.SmallUnpack
                 var smallArchive = new SmallArchiveFile();
                 smallArchive.Deserialize(input);
 
-                long counter = 0;
-                long skipped = 0;
-                long totalCount = smallArchive.Entries.Count;
+                long current = 0;
+                long total = smallArchive.Entries.Count;
+                var padding = total.ToString(CultureInfo.InvariantCulture).Length;
 
-                if (verbose == true)
+                Directory.CreateDirectory(outputPath);
+
+                var xmlPath = Path.Combine(outputPath, "@files.xml");
+                var xmlSettings = new XmlWriterSettings()
                 {
-                    Console.WriteLine("{0} files in small archive.", totalCount);
-                }
-
-                foreach (var entry in smallArchive.Entries)
+                    Indent = true,
+                };
+                using (var xml = XmlWriter.Create(xmlPath, xmlSettings))
                 {
-                    counter++;
+                    xml.WriteStartDocument();
+                    xml.WriteStartElement("files");
 
-                    if (string.IsNullOrEmpty(entry.Name) == true)
+                    foreach (var entry in smallArchive.Entries)
                     {
-                        throw new InvalidOperationException();
-                    }
+                        current++;
 
-                    var entryPath = entry.Name;
-                    if (entryPath[0] == '/' || entryPath[0] == '\\')
-                    {
-                        entryPath = entryPath.Substring(1);
-                    }
-                    entryPath = entryPath.Replace('/', Path.DirectorySeparatorChar);
+                        if (string.IsNullOrEmpty(entry.Name) == true)
+                        {
+                            throw new InvalidOperationException();
+                        }
 
-                    if (useFullPaths == false)
-                    {
-                        entryPath = Path.GetFileName(entryPath);
-                    }
+                        var entryName = entry.Name;
 
-                    var outputPath = Path.Combine(baseOutputPath, entryPath);
-                    if (overwriteFiles == false && File.Exists(entryPath) == true)
-                    {
+                        if (filter != null && filter.IsMatch(entryName) == false)
+                        {
+                            continue;
+                        }
+
+                        var entryPath = entryName;
+                        if (entryPath[0] == '/' || entryPath[0] == '\\')
+                        {
+                            entryPath = entryPath.Substring(1);
+                        }
+                        entryPath = entryPath.Replace('/', Path.DirectorySeparatorChar);
+
+                        if (dontUseFullPaths == true)
+                        {
+                            entryPath = Path.GetFileName(entryPath);
+                        }
+
+                        entryPath = Path.Combine(outputPath, entryPath);
+                        if (overwriteFiles == false && File.Exists(entryName) == true)
+                        {
+                            continue;
+                        }
+
                         if (verbose == true)
                         {
-                            Console.WriteLine("{1:D4}/{2:D4} !! {0}", entry.Name, counter, totalCount);
+                            Console.WriteLine("[{0}/{1}] {2}",
+                                              current.ToString(CultureInfo.InvariantCulture).PadRight(padding),
+                                              total,
+                                              entryName);
                         }
 
-                        skipped++;
-                        continue;
-                    }
-
-                    if (verbose == true || listing == true)
-                    {
-                        Console.WriteLine("{1:D4}/{2:D4} => {0}", entry.Name, counter, totalCount);
-                    }
-
-                    if (entry.Offset == 0)
-                    {
-                        continue;
-                    }
-
-                    if (listing == false)
-                    {
-                        var parentOutputPath = Path.GetDirectoryName(outputPath);
-                        if (string.IsNullOrEmpty(parentOutputPath) == false)
+                        if (entry.Offset == 0)
                         {
-                            Directory.CreateDirectory(parentOutputPath);
+                            xml.WriteStartElement("file");
+                            xml.WriteStartAttribute("name");
+                            xml.WriteValue(entryName);
+                            xml.WriteEndAttribute();
+                            xml.WriteStartAttribute("size");
+                            xml.WriteValue(entry.Size);
+                            xml.WriteEndAttribute();
+                            xml.WriteEndElement();
                         }
-
-                        using (var output = File.Create(outputPath))
+                        else
                         {
-                            input.Seek(entry.Offset, SeekOrigin.Begin);
-                            output.WriteFromStream(input, entry.Size);
+                            xml.WriteStartElement("file");
+                            xml.WriteStartAttribute("name");
+                            xml.WriteValue(entryName);
+                            xml.WriteEndAttribute();
+                            xml.WriteValue(GetRelativePathForFile(xmlPath, entryPath));
+                            xml.WriteEndElement();
+
+                            var parentOutputPath = Path.GetDirectoryName(entryPath);
+                            if (string.IsNullOrEmpty(parentOutputPath) == false)
+                            {
+                                Directory.CreateDirectory(parentOutputPath);
+                            }
+
+                            using (var output = File.Create(entryPath))
+                            {
+                                input.Seek(entry.Offset, SeekOrigin.Begin);
+                                output.WriteFromStream(input, entry.Size);
+                            }
                         }
                     }
-                }
 
-                if (verbose == true && skipped > 0)
-                {
-                    Console.WriteLine("{0} files not overwritten.", skipped);
+                    xml.WriteEndElement();
+                    xml.WriteEndDocument();
                 }
             }
+        }
+
+        private static string GetRelativePathForFile(string fromPath, string toPath)
+        {
+            var toName = Path.GetFileName(toPath);
+            if (string.IsNullOrEmpty(toName) == true)
+            {
+                throw new ArgumentNullException("toPath");
+            }
+
+            fromPath = Path.GetDirectoryName(fromPath);
+            toPath = Path.GetDirectoryName(toPath);
+            var relativePath = GetRelativePath(fromPath, toPath);
+            return Path.Combine(relativePath, toName);
+        }
+
+        private static string GetRelativePath(string fromPath, string toPath)
+        {
+            if (fromPath == null)
+            {
+                throw new ArgumentNullException("fromPath");
+            }
+
+            if (toPath == null)
+            {
+                throw new ArgumentNullException("toPath");
+            }
+
+            Func<string, string, int> compare =
+                (a, b) => string.Compare(a, b, CultureInfo.InvariantCulture, CompareOptions.OrdinalIgnoreCase);
+
+            if (Path.IsPathRooted(fromPath) == true && Path.IsPathRooted(toPath) == true)
+            {
+                if (compare(Path.GetPathRoot(fromPath), Path.GetPathRoot(toPath)) != 0)
+                {
+                    return toPath;
+                }
+            }
+
+            var relativePath = new List<string>();
+            var fromDirectories = fromPath.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            var toDirectories = toPath.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+
+            int length = Math.Min(fromDirectories.Length, toDirectories.Length);
+            int lastCommonRoot = -1;
+
+            // find common root
+            for (int x = 0; x < length; x++)
+            {
+                if (compare(fromDirectories[x], toDirectories[x]) != 0)
+                {
+                    break;
+                }
+                lastCommonRoot = x;
+            }
+
+            if (lastCommonRoot < 0)
+            {
+                return toPath;
+            }
+
+            // add relative directories in from path
+            for (int x = lastCommonRoot + 1; x < fromDirectories.Length; x++)
+            {
+                if (fromDirectories[x].Length > 0)
+                {
+                    relativePath.Add("..");
+                }
+            }
+
+            // add directories to path
+            for (int x = lastCommonRoot + 1; x < toDirectories.Length; x++)
+            {
+                relativePath.Add(toDirectories[x]);
+            }
+
+            return string.Join(Path.DirectorySeparatorChar.ToString(CultureInfo.InvariantCulture),
+                               relativePath.ToArray());
         }
 
         private static Stream CreateCoolArchiveStream(Stream input)
