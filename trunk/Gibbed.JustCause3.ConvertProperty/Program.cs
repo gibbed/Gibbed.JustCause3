@@ -63,7 +63,6 @@ namespace Gibbed.JustCause3.ConvertProperty
         internal enum FileFormat
         {
             // ReSharper disable InconsistentNaming
-            Bin, // RawPropertyContainerFile
             RTPC, // PropertyContainerFile
             // ReSharper restore InconsistentNaming
         }
@@ -168,14 +167,7 @@ namespace Gibbed.JustCause3.ConvertProperty
                     }
                     else
                     {
-                        fileFormat = FileFormat.Bin;
-
-                        input.Seek(0, SeekOrigin.Begin);
-                        propertyFile = new RawPropertyContainerFile()
-                        {
-                            Endian = endian.Value,
-                        };
-                        propertyFile.Deserialize(input);
+                        throw new NotSupportedException();
                     }
                 }
 
@@ -200,12 +192,13 @@ namespace Gibbed.JustCause3.ConvertProperty
                     writer.WriteAttributeString("format", fileFormat.ToString());
                     writer.WriteAttributeString("endian", endian.Value.ToString());
 
-                    foreach (var node in propertyFile.Nodes)
+                    if (propertyFile.Root != null)
                     {
                         writer.WriteStartElement("object");
-                        WriteObject(writer, node);
+                        WriteObject(writer, propertyFile.Root);
                         writer.WriteEndElement();
                     }
+
                     writer.WriteEndElement();
                     writer.WriteEndDocument();
                 }
@@ -245,7 +238,7 @@ namespace Gibbed.JustCause3.ConvertProperty
                     }
                     else
                     {
-                        fileFormat = FileFormat.Bin;
+                        throw new FormatException();
                     }
 
                     var endianAttribute = root.GetAttribute("endian", "");
@@ -267,15 +260,6 @@ namespace Gibbed.JustCause3.ConvertProperty
 
                     switch (fileFormat)
                     {
-                        case FileFormat.Bin:
-                        {
-                            propertyFile = new RawPropertyContainerFile()
-                            {
-                                Endian = endian.Value,
-                            };
-                            break;
-                        }
-
                         case FileFormat.RTPC:
                         {
                             propertyFile = new PropertyContainerFile()
@@ -291,10 +275,10 @@ namespace Gibbed.JustCause3.ConvertProperty
                         }
                     }
 
-                    var nodes = root.Select("object");
-                    while (nodes.MoveNext() == true)
+                    var node = root.SelectSingleNode("object");
+                    if (node != null)
                     {
-                        propertyFile.Nodes.Add(ParseObject(nodes.Current));
+                        propertyFile.Root = ParseObject(node);
                     }
                 }
 
@@ -321,9 +305,13 @@ namespace Gibbed.JustCause3.ConvertProperty
 
         private static void WriteObject(XmlWriter writer, Node node)
         {
-            if (node.Tag != null)
+            if (_Names.Contains(node.NameHash) == true)
             {
-                writer.WriteAttributeString("tag", node.Tag);
+                writer.WriteAttributeString("name", _Names[node.NameHash]);
+            }
+            else
+            {
+                writer.WriteAttributeString("id", node.NameHash.ToString("X8"));
             }
 
             // is this ridiculous?
@@ -331,37 +319,25 @@ namespace Gibbed.JustCause3.ConvertProperty
 
             var childrenByName =
                 node.Children
-                    .Where(kv => node.KnownNames.ContainsKey(kv.Key) == true)
-                    .Select(kv => new KeyValuePair<string, Node>(node.KnownNames[kv.Key], kv.Value))
-                    .Concat(node.Children
-                                .Where(kv => node.KnownNames.ContainsKey(kv.Key) == false &&
-                                             _Names.Contains(kv.Key) == true)
-                                .Select(kv => new KeyValuePair<string, Node>(_Names[kv.Key], kv.Value)))
+                    .Where(c => _Names.Contains(c.NameHash) == true)
+                    .Select(c => new KeyValuePair<string, Node>(_Names[c.NameHash], c))
                     .ToArray();
 
             var childrenByNameHash =
                 node.Children
-                    .Where(kv => node.KnownNames.ContainsKey(kv.Key) == false &&
-                                 _Names.Contains(kv.Key) == false)
-                    .Select(kv => kv)
+                    .Where(c => _Names.Contains(c.NameHash) == false)
+                    .Select(c => c)
                     .ToArray();
 
             var propertiesByName =
                 node.Properties
-                    .Where(kv => node.KnownNames.ContainsKey(kv.Key) == true)
-                    .Select(kv => new KeyValuePair<string, IVariant>(node.KnownNames[kv.Key], kv.Value))
-                    .Concat(node.Properties
-                                .Where(kv => node.KnownNames.ContainsKey(kv.Key) == false &&
-                                             _Names.Contains(kv.Key) == true)
-                                .Select(kv => new KeyValuePair<string, IVariant>(
-                                                  _Names[kv.Key],
-                                                  kv.Value)))
+                    .Where(kv => _Names.Contains(kv.Key) == true)
+                    .Select(kv => new KeyValuePair<string, IVariant>(_Names[kv.Key], kv.Value))
                     .ToArray();
 
             var propertiesByNameHash =
                 node.Properties
-                    .Where(kv => node.KnownNames.ContainsKey(kv.Key) == false &&
-                                 _Names.Contains(kv.Key) == false)
+                    .Where(kv => _Names.Contains(kv.Key) == false)
                     .Select(kv => kv)
                     .ToArray();
 
@@ -381,7 +357,7 @@ namespace Gibbed.JustCause3.ConvertProperty
                 foreach (var kv in childrenByName.OrderBy(kv => kv.Key))
                 {
                     writer.WriteStartElement("object");
-                    writer.WriteAttributeString("name", kv.Key);
+                    //writer.WriteAttributeString("name", kv.Key);
                     WriteObject(writer, kv.Value);
                     writer.WriteEndElement();
                 }
@@ -392,16 +368,7 @@ namespace Gibbed.JustCause3.ConvertProperty
                 foreach (var kv in propertiesByNameHash.OrderBy(p => p.Key, new NameComparer(_Names)))
                 {
                     writer.WriteStartElement("value");
-
-                    if (_Names.Contains(kv.Key) == true)
-                    {
-                        writer.WriteAttributeString("name", _Names[kv.Key]);
-                    }
-                    else
-                    {
-                        writer.WriteAttributeString("id", kv.Key.ToString("X8"));
-                    }
-
+                    writer.WriteAttributeString("id", kv.Key.ToString("X8"));
                     WriteProperty(writer, kv.Value);
                     writer.WriteEndElement();
                 }
@@ -409,20 +376,10 @@ namespace Gibbed.JustCause3.ConvertProperty
 
             if (childrenByNameHash.Length > 0)
             {
-                foreach (var kv in childrenByNameHash.OrderBy(n => n.Key, new NameComparer(_Names)))
+                foreach (var child in childrenByNameHash.OrderBy(c => c.NameHash, new NameComparer(_Names)))
                 {
                     writer.WriteStartElement("object");
-
-                    if (_Names.Contains(kv.Key) == true)
-                    {
-                        writer.WriteAttributeString("name", _Names[kv.Key]);
-                    }
-                    else
-                    {
-                        writer.WriteAttributeString("id", kv.Key.ToString("X8"));
-                    }
-
-                    WriteObject(writer, kv.Value);
+                    WriteObject(writer, child);
                     writer.WriteEndElement();
                 }
             }
@@ -433,17 +390,14 @@ namespace Gibbed.JustCause3.ConvertProperty
             string id = node.GetAttribute("id", "");
             name = node.GetAttribute("name", "");
 
-            if (string.IsNullOrEmpty(id) == false &&
-                string.IsNullOrEmpty(name) == false)
+            if (string.IsNullOrEmpty(id) == false && string.IsNullOrEmpty(name) == false)
             {
-                if (uint.Parse(id, NumberStyles.AllowHexSpecifier) !=
-                    name.HashJenkins())
+                if (uint.Parse(id, NumberStyles.AllowHexSpecifier) != name.HashJenkins())
                 {
                     throw new InvalidOperationException("supplied id and name, but they don't match");
                 }
             }
-            else if (string.IsNullOrEmpty(id) == true &&
-                     string.IsNullOrEmpty(name) == true)
+            else if (string.IsNullOrEmpty(id) == true && string.IsNullOrEmpty(name) == true)
             {
                 throw new InvalidOperationException("did not supply id or name");
             }
@@ -460,11 +414,8 @@ namespace Gibbed.JustCause3.ConvertProperty
         {
             var node = new Node();
 
-            if (nav.MoveToAttribute("tag", "") == true)
-            {
-                node.Tag = nav.Value;
-                nav.MoveToParent();
-            }
+            string name;
+            node.NameHash = GetIdOrName(nav, out name);
 
             var values = nav.Select("value");
             while (values.MoveNext() == true)
@@ -475,75 +426,70 @@ namespace Gibbed.JustCause3.ConvertProperty
                     throw new InvalidOperationException();
                 }
 
-                string name;
-                var id = GetIdOrName(current, out name);
-                var type = current.GetAttribute("type", "");
-
-                var variant = VariantFactory.GetVariant(type);
-                variant.Parse(current.Value);
-
-                if (node.Properties.ContainsKey(id) == true)
-                {
-                    var lineInfo = (IXmlLineInfo)current;
-
-                    if (string.IsNullOrEmpty(name) == true)
-                    {
-                        throw new FormatException(string.Format(
-                            "duplicate object id 0x{0:X8} at line {1} position {2}",
-                            id,
-                            lineInfo.LineNumber,
-                            lineInfo.LinePosition));
-                    }
-
-                    throw new FormatException(
-                        string.Format("duplicate object id 0x{0:X8} ('{1}') at line {2} position {3}",
-                                      id,
-                                      name,
-                                      lineInfo.LineNumber,
-                                      lineInfo.LinePosition));
-                }
-
+                IVariant variant;
+                var id = ParseProperty(current, node, out variant);
                 node.Properties.Add(id, variant);
             }
 
-            var children = nav.Select("object");
-            while (children.MoveNext() == true)
+            var rawChildren = nav.Select("object");
+            var childNameHashes = new List<uint>();
+            while (rawChildren.MoveNext() == true)
             {
-                var child = children.Current;
-                if (child == null)
+                var rawChild = rawChildren.Current;
+                if (rawChild == null)
                 {
                     throw new InvalidOperationException();
                 }
 
-                string name;
-                uint id = GetIdOrName(child, out name);
-                var obj = ParseObject(child);
+                var child = ParseObject(rawChild);
+                node.Children.Add(child);
 
-                if (node.Children.ContainsKey(id) == true)
+                if (childNameHashes.Contains(child.NameHash) == true)
                 {
-                    var lineInfo = (IXmlLineInfo)child;
-
-                    if (string.IsNullOrEmpty(name) == true)
-                    {
-                        throw new FormatException(string.Format(
-                            "duplicate object id 0x{0:X8} at line {1} position {2}",
-                            id,
-                            lineInfo.LineNumber,
-                            lineInfo.LinePosition));
-                    }
-
+                    var lineInfo = (IXmlLineInfo)nav;
                     throw new FormatException(
                         string.Format("duplicate object id 0x{0:X8} ('{1}') at line {2} position {3}",
-                                      id,
+                                      child.NameHash,
                                       name,
                                       lineInfo.LineNumber,
                                       lineInfo.LinePosition));
                 }
-
-                node.Children.Add(id, obj);
+                childNameHashes.Add(child.NameHash);
             }
 
             return node;
+        }
+
+        private static uint ParseProperty(XPathNavigator nav, Node node, out IVariant variant)
+        {
+            string name;
+            var id = GetIdOrName(nav, out name);
+            var type = nav.GetAttribute("type", "");
+
+            variant = VariantFactory.GetVariant(type);
+            variant.Parse(nav.Value);
+
+            if (node.Properties.ContainsKey(id) == true)
+            {
+                var lineInfo = (IXmlLineInfo)nav;
+
+                if (string.IsNullOrEmpty(name) == true)
+                {
+                    throw new FormatException(string.Format(
+                        "duplicate property id 0x{0:X8} at line {1} position {2}",
+                        id,
+                        lineInfo.LineNumber,
+                        lineInfo.LinePosition));
+                }
+
+                throw new FormatException(
+                    string.Format("duplicate property id 0x{0:X8} ('{1}') at line {2} position {3}",
+                                  id,
+                                  name,
+                                  lineInfo.LineNumber,
+                                  lineInfo.LinePosition));
+            }
+            return id;
         }
     }
 }

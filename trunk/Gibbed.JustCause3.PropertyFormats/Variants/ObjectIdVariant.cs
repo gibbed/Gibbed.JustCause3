@@ -70,14 +70,20 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
             get { return PropertyContainerFile.VariantType.ObjectId; }
         }
 
-        bool PropertyContainerFile.IRawVariant.IsSimple
+        bool PropertyContainerFile.IRawVariant.IsPrimitive
         {
-            get { return true; }
+            get { return false; }
+        }
+
+        uint PropertyContainerFile.IRawVariant.Alignment
+        {
+            get { return 4; }
         }
 
         void PropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)
         {
-            throw new NotImplementedException();
+            output.WriteValueU32(this._Value.Key, endian);
+            output.WriteValueU32(this._Value.Value, endian);
         }
 
         void PropertyContainerFile.IRawVariant.Deserialize(Stream input, Endian endian)

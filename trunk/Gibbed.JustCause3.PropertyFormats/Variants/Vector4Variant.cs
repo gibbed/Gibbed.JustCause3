@@ -27,7 +27,7 @@ using Gibbed.IO;
 
 namespace Gibbed.JustCause3.PropertyFormats.Variants
 {
-    public class Vector4Variant : IVariant, RawPropertyContainerFile.IRawVariant, PropertyContainerFile.IRawVariant
+    public class Vector4Variant : IVariant, PropertyContainerFile.IRawVariant
     {
         private FileFormats.Vector4 _Value;
 
@@ -66,33 +66,21 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
                 this._Value.Z.ToString(CultureInfo.InvariantCulture),
                 this._Value.W.ToString(CultureInfo.InvariantCulture));
         }
-
-        #region RawPropertyContainerFile
-        RawPropertyContainerFile.VariantType RawPropertyContainerFile.IRawVariant.Type
-        {
-            get { return RawPropertyContainerFile.VariantType.Vector4; }
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)
-        {
-            FileFormats.Vector4.Write(output, this._Value, endian);
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Deserialize(Stream input, Endian endian)
-        {
-            this._Value = FileFormats.Vector4.Read(input, endian);
-        }
-        #endregion
-
+        
         #region PropertyContainerFile
         PropertyContainerFile.VariantType PropertyContainerFile.IRawVariant.Type
         {
             get { return PropertyContainerFile.VariantType.Vector4; }
         }
 
-        bool PropertyContainerFile.IRawVariant.IsSimple
+        bool PropertyContainerFile.IRawVariant.IsPrimitive
         {
-            get { return true; }
+            get { return false; }
+        }
+
+        uint PropertyContainerFile.IRawVariant.Alignment
+        {
+            get { return 4; }
         }
 
         void PropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)

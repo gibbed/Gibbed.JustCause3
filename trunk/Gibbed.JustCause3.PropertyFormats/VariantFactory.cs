@@ -64,7 +64,7 @@ namespace Gibbed.JustCause3.PropertyFormats
 
                 case "mat":
                 {
-                    return new Variants.Matrix4x3Variant();
+                    return new Variants.Matrix4x4Variant();
                 }
 
                 case "vec_int":
@@ -77,65 +77,17 @@ namespace Gibbed.JustCause3.PropertyFormats
                     return new Variants.FloatsVariant();
                 }
 
+                case "vec_byte":
+                {
+                    return new Variants.BytesVariant();
+                }
+
+                case "objectid":
+                {
+                    return new Variants.ObjectIdVariant();
+                }
+
                 case "vec_events":
-                {
-                    return new Variants.EventsVariant();
-                }
-            }
-
-            throw new ArgumentException("unknown variant type", "type");
-        }
-
-        internal static RawPropertyContainerFile.IRawVariant GetVariant(RawPropertyContainerFile.VariantType type)
-        {
-            switch (type)
-            {
-                case RawPropertyContainerFile.VariantType.Integer:
-                {
-                    return new Variants.IntegerVariant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Float:
-                {
-                    return new Variants.FloatVariant();
-                }
-
-                case RawPropertyContainerFile.VariantType.String:
-                {
-                    return new Variants.StringVariant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Vector2:
-                {
-                    return new Variants.Vector2Variant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Vector3:
-                {
-                    return new Variants.Vector3Variant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Vector4:
-                {
-                    return new Variants.Vector4Variant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Matrix4x3:
-                {
-                    return new Variants.Matrix4x3Variant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Integers:
-                {
-                    return new Variants.IntegersVariant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Floats:
-                {
-                    return new Variants.FloatsVariant();
-                }
-
-                case RawPropertyContainerFile.VariantType.Events:
                 {
                     return new Variants.EventsVariant();
                 }
@@ -178,9 +130,9 @@ namespace Gibbed.JustCause3.PropertyFormats
                     return new Variants.Vector4Variant();
                 }
 
-                case PropertyContainerFile.VariantType.Matrix4x3:
+                case PropertyContainerFile.VariantType.Matrix4x4:
                 {
-                    return new Variants.Matrix4x3Variant();
+                    return new Variants.Matrix4x4Variant();
                 }
 
                 case PropertyContainerFile.VariantType.Integers:

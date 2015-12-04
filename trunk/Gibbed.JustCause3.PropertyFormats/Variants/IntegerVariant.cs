@@ -26,7 +26,7 @@ using Gibbed.IO;
 
 namespace Gibbed.JustCause3.PropertyFormats.Variants
 {
-    public class IntegerVariant : IVariant, RawPropertyContainerFile.IRawVariant, PropertyContainerFile.IRawVariant
+    public class IntegerVariant : IVariant, PropertyContainerFile.IRawVariant
     {
         private int _Value;
 
@@ -51,32 +51,20 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
             return this._Value.ToString(CultureInfo.InvariantCulture);
         }
 
-        #region RawPropertyContainerFile
-        RawPropertyContainerFile.VariantType RawPropertyContainerFile.IRawVariant.Type
-        {
-            get { return RawPropertyContainerFile.VariantType.Integer; }
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)
-        {
-            output.WriteValueS32(this._Value, endian);
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Deserialize(Stream input, Endian endian)
-        {
-            this._Value = input.ReadValueS32(endian);
-        }
-        #endregion
-
         #region PropertyContainerFile
         PropertyContainerFile.VariantType PropertyContainerFile.IRawVariant.Type
         {
             get { return PropertyContainerFile.VariantType.Integer; }
         }
 
-        bool PropertyContainerFile.IRawVariant.IsSimple
+        bool PropertyContainerFile.IRawVariant.IsPrimitive
         {
-            get { return false; }
+            get { return true; }
+        }
+
+        uint PropertyContainerFile.IRawVariant.Alignment
+        {
+            get { return 0; }
         }
 
         void PropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)

@@ -26,19 +26,23 @@ namespace Gibbed.JustCause3.PropertyFormats
 {
     public class Node
     {
-        private readonly Dictionary<uint, Node> _Children;
+        private uint _NameHash;
+        private readonly List<Node> _Children;
         private readonly Dictionary<uint, IVariant> _Properties;
-        private readonly Dictionary<uint, string> _KnownNames;
-        private string _Tag;
 
         public Node()
         {
-            this._Children = new Dictionary<uint, Node>();
+            this._Children = new List<Node>();
             this._Properties = new Dictionary<uint, IVariant>();
-            this._KnownNames = new Dictionary<uint, string>();
         }
 
-        public Dictionary<uint, Node> Children
+        public uint NameHash
+        {
+            get { return this._NameHash; }
+            set { this._NameHash = value; }
+        }
+
+        public List<Node> Children
         {
             get { return this._Children; }
         }
@@ -48,15 +52,9 @@ namespace Gibbed.JustCause3.PropertyFormats
             get { return this._Properties; }
         }
 
-        public Dictionary<uint, string> KnownNames
+        public override string ToString()
         {
-            get { return this._KnownNames; }
-        }
-
-        public string Tag
-        {
-            get { return this._Tag; }
-            set { this._Tag = value; }
+            return this._NameHash.ToString("X8");
         }
     }
 }
