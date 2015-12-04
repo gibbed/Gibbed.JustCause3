@@ -43,13 +43,20 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
 
         public void Parse(string text)
         {
-            var parts = text.Split(',');
-            var bytes = new byte[parts.Length];
-            for (int i = 0; i < parts.Length; i += 2)
+            if (string.IsNullOrEmpty(text) == false)
             {
-                bytes[i] = byte.Parse(parts[i], CultureInfo.InvariantCulture);
+                var parts = text.Split(',');
+                var bytes = new byte[parts.Length];
+                for (int i = 0; i < parts.Length; i++)
+                {
+                    bytes[i] = byte.Parse(parts[i], CultureInfo.InvariantCulture);
+                }
+                this._Value = bytes;
             }
-            this._Value = bytes;
+            else
+            {
+                this._Value = new byte[0];
+            }
         }
 
         public string Compose()
@@ -63,9 +70,14 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
             get { return PropertyContainerFile.VariantType.Bytes; }
         }
 
-        bool PropertyContainerFile.IRawVariant.IsSimple
+        bool PropertyContainerFile.IRawVariant.IsPrimitive
         {
-            get { return true; }
+            get { return false; }
+        }
+
+        uint PropertyContainerFile.IRawVariant.Alignment
+        {
+            get { return 4; }
         }
 
         void PropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)

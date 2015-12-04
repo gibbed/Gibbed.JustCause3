@@ -20,14 +20,13 @@
  *    distribution.
  */
 
-using System.Collections.Generic;
 using System.IO;
 
 namespace Gibbed.JustCause3.PropertyFormats
 {
     public interface IPropertyFile
     {
-        List<Node> Nodes { get; }
+        Node Root { get; set; }
 
         void Serialize(Stream output);
         void Deserialize(Stream input);

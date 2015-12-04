@@ -49,6 +49,16 @@ namespace Gibbed.JustCause3.FileFormats
             get { return this._Entries; }
         }
 
+        public static long EstimateHeaderSize(IEnumerable<string> paths)
+        {
+            long size = 4 + 4 + 4 + 4;
+            foreach (var path in paths)
+            {
+                size += 4 + Encoding.ASCII.GetByteCount(path).Align(4) + 4 + 4;
+            }
+            return size.Align(16);
+        }
+
         public void Serialize(Stream output)
         {
             var endian = this._Endian;
@@ -138,8 +148,10 @@ namespace Gibbed.JustCause3.FileFormats
 
             public static void Write(Stream output, Entry value, Endian endian)
             {
-                output.WriteValueS32(Encoding.ASCII.GetByteCount(value.Name), endian);
-                output.WriteString(value.Name, Encoding.ASCII);
+                var nameBytes = Encoding.ASCII.GetBytes(value.Name);
+                Array.Resize(ref nameBytes, nameBytes.Length.Align(4));
+                output.WriteValueS32(nameBytes.Length, endian);
+                output.Write(nameBytes, 0, nameBytes.Length);
                 output.WriteValueU32(value.Offset, endian);
                 output.WriteValueU32(value.Size, endian);
             }

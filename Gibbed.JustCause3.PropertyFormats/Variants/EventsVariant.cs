@@ -29,7 +29,7 @@ using Gibbed.IO;
 
 namespace Gibbed.JustCause3.PropertyFormats.Variants
 {
-    public class EventsVariant : IVariant, RawPropertyContainerFile.IRawVariant, PropertyContainerFile.IRawVariant
+    public class EventsVariant : IVariant, PropertyContainerFile.IRawVariant
     {
         private readonly List<KeyValuePair<uint, uint>> _Values;
 
@@ -50,18 +50,20 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
 
         public void Parse(string text)
         {
-            var parts = text.Split(',');
-            if ((parts.Length % 2) != 0)
-            {
-                throw new FormatException("vec_events requires pairs of uints delimited by a comma");
-            }
-
             this._Values.Clear();
-            for (int i = 0; i < parts.Length; i += 2)
+            if (string.IsNullOrEmpty(text) == false)
             {
-                var left = uint.Parse(parts[i + 0], CultureInfo.InvariantCulture);
-                var right = uint.Parse(parts[i + 1], CultureInfo.InvariantCulture);
-                this._Values.Add(new KeyValuePair<uint, uint>(left, right));
+                var parts = text.Split(',');
+                if ((parts.Length % 2) != 0)
+                {
+                    throw new FormatException("vec_events requires pairs of uints delimited by a comma");
+                }
+                for (int i = 0; i < parts.Length; i += 2)
+                {
+                    var left = uint.Parse(parts[i + 0], CultureInfo.InvariantCulture);
+                    var right = uint.Parse(parts[i + 1], CultureInfo.InvariantCulture);
+                    this._Values.Add(new KeyValuePair<uint, uint>(left, right));
+                }
             }
         }
 
@@ -78,52 +80,31 @@ namespace Gibbed.JustCause3.PropertyFormats.Variants
                 kv.Value.ToString(CultureInfo.InvariantCulture));
         }
 
-        #region RawPropertyContainerFile
-        RawPropertyContainerFile.VariantType RawPropertyContainerFile.IRawVariant.Type
-        {
-            get { return RawPropertyContainerFile.VariantType.Events; }
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)
-        {
-            var values = this._Values;
-            output.WriteValueS32(values.Count, endian);
-            foreach (var kv in values)
-            {
-                output.WriteValueU32(kv.Key, endian);
-                output.WriteValueU32(kv.Value, endian);
-            }
-        }
-
-        void RawPropertyContainerFile.IRawVariant.Deserialize(Stream input, Endian endian)
-        {
-            int count = input.ReadValueS32(endian);
-            var values = new KeyValuePair<uint, uint>[count];
-            for (int i = 0; i < count; i++)
-            {
-                var left = input.ReadValueU32(endian);
-                var right = input.ReadValueU32(endian);
-                values[i] = new KeyValuePair<uint, uint>(left, right);
-            }
-            this._Values.Clear();
-            this._Values.AddRange(values);
-        }
-        #endregion
-
         #region PropertyContainerFile
         PropertyContainerFile.VariantType PropertyContainerFile.IRawVariant.Type
         {
             get { return PropertyContainerFile.VariantType.Events; }
         }
 
-        bool PropertyContainerFile.IRawVariant.IsSimple
+        bool PropertyContainerFile.IRawVariant.IsPrimitive
         {
-            get { return true; }
+            get { return false; }
+        }
+
+        uint PropertyContainerFile.IRawVariant.Alignment
+        {
+            get { return 4; }
         }
 
         void PropertyContainerFile.IRawVariant.Serialize(Stream output, Endian endian)
         {
-            throw new NotImplementedException();
+            var values = this._Values;
+            output.WriteValueS32(values.Count, endian);
+            foreach (var value in values)
+            {
+                output.WriteValueU32(value.Key, endian);
+                output.WriteValueU32(value.Value, endian);
+            }
         }
 
         void PropertyContainerFile.IRawVariant.Deserialize(Stream input, Endian endian)
