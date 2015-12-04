@@ -1,7 +1,8 @@
-; 6/7 (85%)
+; 7/7 (100%)
 sound/fmod_banks/effects.bank
 sound/fmod_banks/gui.bank
 sound/fmod_banks/master.bank
 sound/fmod_banks/master_strings.bank
+sound/fmod_banks/patch1.bank
 sound/fmod_banks/vehicles.bank
 sound/fmod_banks/vehicles_air.bank

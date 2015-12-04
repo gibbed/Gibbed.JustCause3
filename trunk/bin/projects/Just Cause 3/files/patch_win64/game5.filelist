@@ -1,4 +1,5 @@
-; 91/102 (89%)
+; 102/102 (100%)
+patchmetadata.bin
 sound/fmod_banks/vehicles_sea.bank
 sound/fmod_banks/weapons.bank
 sound/granmatre.stringlookup
@@ -32,8 +33,10 @@ sound/rosa.stringlookup
 sound/rosa.vocalsc
 sound/vocals_settings.vocals_settingsc
 text/master.stringlookup
+textures/00_general/dummy/a00_dummy_grey_dif_detail.ddsc
 textures/decals/bulletimpacts_dif.ddsc
 textures/dummies/dummy_white_dif.ddsc
+textures/dummies/fresnel/steel.ddsc
 textures/generic_iemcube_dif.ddsc
 textures/genericenvcube_with_point_lights_dif.ddsc
 textures/roads/asphalt/asphalt_damage_01_alpha.ddsc
@@ -58,6 +61,8 @@ textures/roads/train/train_markings_01.ddsc
 textures/roads/train/train_markings_01_alpha_mpm.ddsc
 textures/roads/train/train_track_base_01_alpha_mpm.ddsc
 textures/roads/train/train_track_base_01_dif.ddsc
+textures/ui/weapon_icons/14.ddsc
+textures/ui/weapon_icons/14_sm.ddsc
 textures/windows/window_cracks_bullet_mpm.ddsc
 textures/windows/window_cracks_bullet_nrm.ddsc
 ui/comm_brags_feats.gfx
@@ -72,16 +77,22 @@ ui/credits.gfx
 ui/dyn_frontend_start.gfx
 ui/dyn_rom_poster.gfx
 ui/dyn_video_player.gfx
+ui/font_ara.gfx
 ui/font_jp.gfx
 ui/hud.gfx
+ui/hud_i1b1.dds
 ui/hud_i32.dds
 ui/hud_i46.dds
 ui/hud_i56.dds
 ui/hud_i5a.dds
 ui/intro.gfx
+ui/intro_i15.dds
+ui/intro_i4.dds
 ui/load.gfx
+ui/load_i7.dds
 ui/main.gfx
 ui/overlay.gfx
+ui/overlay_i3.dds
 ui/pause.gfx
 ui/reward.gfx
 ui/rom.gfx
