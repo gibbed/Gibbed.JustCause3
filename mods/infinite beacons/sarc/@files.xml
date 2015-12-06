@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<files>
+  <file name="editor/entities/jc_weapons/03_thrown/w302_beacon/w302_beacon.ee.fmod_guids">editor\entities\jc_weapons\03_thrown\w302_beacon\w302_beacon.ee.fmod_guids</file>
+  <file name="effects/textures/t_smoke_rolling_04_alpha_dif.ddsc" size="5592560" />
+  <file name="effects/textures/t_spherical_ramp.ddsc">effects\textures\t_spherical_ramp.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_01_dif.ddsc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_01_dif.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_01_met.ddsc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_01_met.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_01_glo.ddsc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_01_glo.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_01_nrm.ddsc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_01_nrm.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_02_dif.ddsc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_02_dif.ddsc</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_a_01_lod1.rbm">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_a_01_lod1.rbm</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_a_01_lod2.rbm">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_a_01_lod2.rbm</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_a_01.lod">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_a_01.lod</file>
+  <file name="models/jc_environments/props/elements/rebel_beacon/rebel_beacon_a_01_col.pfxc">models\jc_environments\props\elements\rebel_beacon\rebel_beacon_a_01_col.pfxc</file>
+  <file name="editor/entities/jc_weapons/03_thrown/w302_beacon/w302_beacon.wtunec">editor\entities\jc_weapons\03_thrown\w302_beacon\w302_beacon.wtunec</file>
+  <!--<file name="editor/entities/jc_weapons/03_thrown/w302_beacon/w302_beacon.wtunec">..\w302_beacon_modified.wtunec</file>-->
+  <file name="editor/entities/jc_weapons/00_shared/autoaim_tuning/autoaim_grenade.wtunec">editor\entities\jc_weapons\00_shared\autoaim_tuning\autoaim_grenade.wtunec</file>
+  <file name="editor/entities/jc_environments/shared/rigid_object_effect_settings_default.etunec">editor\entities\jc_environments\shared\rigid_object_effect_settings_default.etunec</file>
+  <file name="ai/bts/vehicle/airplane/airplane_rebel_drop.btc">ai\bts\vehicle\airplane\airplane_rebel_drop.btc</file>
+  <file name="effects/textures/t_smoke_rolling_04_alpha_dif.tga.8_8b.trim">effects\textures\t_smoke_rolling_04_alpha_dif.tga.8_8b.trim</file>
+  <file name="effects/jc_weapons/hand_grenade/grenade_trail.effc">effects\jc_weapons\hand_grenade\grenade_trail.effc</file>
+  <!--<file name="editor/entities/jc_weapons/03_thrown/w302_beacon/w302_beacon.epe">editor\entities\jc_weapons\03_thrown\w302_beacon\w302_beacon.epe</file>-->
+  <file name="editor/entities/jc_weapons/03_thrown/w302_beacon/w302_beacon.epe">..\w302_beacon_modified.epe</file>
+</files>

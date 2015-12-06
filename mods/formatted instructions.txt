@@ -1,0 +1,25 @@
+<ol>
+	<li>Extract to your game directory. You can find your game directory in Steam by:
+<ol>
+	<li>Right-click Just Cause 3.</li>
+	<li>Choose "Properties".</li>
+	<li>Change to the "Local Files" tab.</li>
+	<li>Click "Browse Local Files...".</li>
+</ol>
+If you installed Steam to a custom location I'm sure you know where the Just Cause 3 files are located.
+
+Make sure you extract using directories! the files need to end up under the dropzone directory in the game directory!</li>
+	<li>You will need to add a few command-line arguments to enable the dropzone directory:
+
+<code>--vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-fs .</code>
+
+You can easily set this through Steam by:
+<ol>
+	<li>Right-click Just Cause 3.</li>
+	<li>Choose "Properties".</li>
+	<li>Click "Set Launch Options...".</li>
+	<li>Paste the arguments line into the text box, and click "OK".</li>
+</ol>
+See this screenshot for what it looks like: <a href="http://i.imgur.com/d6YgULv.png">http://i.imgur.com/d6YgULv.png</a></li>
+	<li>That's it, play!</li>
+</ol>
