@@ -108,6 +108,8 @@ namespace Gibbed.JustCause3.PropertyFormats
                 return;
             }
 
+            var stringOffsets = new Dictionary<string, uint>();
+
             using (var data = new MemoryStream())
             {
                 data.WriteValueU32(Signature, endian);
@@ -148,6 +150,36 @@ namespace Gibbed.JustCause3.PropertyFormats
                             using (var temp = new MemoryStream(bytes))
                             {
                                 rawVariant.Serialize(temp, endian);
+                            }
+
+                            rawProperty = new RawProperty(kv.Key, bytes, rawVariant.Type);
+                        }
+                        else if (rawVariant is Variants.StringVariant)
+                        {
+                            var stringVariant = (Variants.StringVariant)rawVariant;
+
+                            uint dataOffset;
+                            if (stringOffsets.ContainsKey(stringVariant.Value) == false)
+                            {
+                                if (rawVariant.Alignment > 0)
+                                {
+                                    data.Position = data.Position.Align(rawVariant.Alignment);
+                                }
+
+                                dataOffset = (uint)data.Position;
+                                rawVariant.Serialize(data, endian);
+
+                                stringOffsets.Add(stringVariant.Value, dataOffset);
+                            }
+                            else
+                            {
+                                dataOffset = stringOffsets[stringVariant.Value];
+                            }
+
+                            var bytes = new byte[4];
+                            using (var temp = new MemoryStream(bytes))
+                            {
+                                temp.WriteValueU32(dataOffset, endian);
                             }
 
                             rawProperty = new RawProperty(kv.Key, bytes, rawVariant.Type);

@@ -42,7 +42,8 @@ mkdir "dropzone\profile"
 copy "..\gibbed mod readme.txt" . /y
 "%TOOLS%\Gibbed.JustCause3.ConvertItem.exe" "item.json" "dropzone\profile\item.onlinec" 
 del "..\enable hidden rebel drops.zip"
-7z a -r -tzip -mx=9 "..\enable hidden rebel drops.zip" "dropzone" "gibbed mod readme.txt"
+del "..\enable hidden rebel drops v1.1.zip"
+7z a -r -tzip -mx=9 "..\enable hidden rebel drops v1.1.zip" "dropzone" "gibbed mod readme.txt"
 cd ..
 
 cd "no rebel drop timers + enable hidden rebel drops"
@@ -51,7 +52,8 @@ mkdir "dropzone\profile"
 copy "..\gibbed mod readme.txt" . /y
 "%TOOLS%\Gibbed.JustCause3.ConvertItem.exe" "item.json" "dropzone\profile\item.onlinec" 
 del "..\no rebel drop timers + enable hidden rebel drops.zip"
-7z a -r -tzip -mx=9 "..\no rebel drop timers + enable hidden rebel drops.zip" "dropzone" "gibbed mod readme.txt"
+del "..\no rebel drop timers + enable hidden rebel drops v1.1.zip"
+7z a -r -tzip -mx=9 "..\no rebel drop timers + enable hidden rebel drops v1.1.zip" "dropzone" "gibbed mod readme.txt"
 cd ..
 
 cd "no intro"
