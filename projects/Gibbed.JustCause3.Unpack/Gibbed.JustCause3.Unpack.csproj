@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{149BB3DB-C1E4-4238-8F03-554B5E5F3673}</ProjectGuid>
+    <ProjectGuid>{6D721C39-CBE3-40B7-8D93-35E13DC2318D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.JustCause3.ConvertProperty</RootNamespace>
-    <AssemblyName>Gibbed.JustCause3.ConvertProperty</AssemblyName>
+    <RootNamespace>Gibbed.JustCause3.Unpack</RootNamespace>
+    <AssemblyName>Gibbed.JustCause3.Unpack</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\</OutputPath>
+    <OutputPath>..\..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NameComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,10 +54,6 @@
     <ProjectReference Include="..\Gibbed.JustCause3.FileFormats\Gibbed.JustCause3.FileFormats.csproj">
       <Project>{159F8BBE-9207-423F-9A4B-85748BA09D84}</Project>
       <Name>Gibbed.JustCause3.FileFormats</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Gibbed.JustCause3.PropertyFormats\Gibbed.JustCause3.PropertyFormats.csproj">
-      <Project>{60B0FBA2-0906-40CD-A0CA-315AC71560BF}</Project>
-      <Name>Gibbed.JustCause3.PropertyFormats</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gibbed.ProjectData\Gibbed.ProjectData.csproj">
       <Project>{F27A289E-3376-4653-89F3-D19C1ECABF33}</Project>

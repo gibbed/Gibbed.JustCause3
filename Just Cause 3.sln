@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.FileFormats", "Gibbed.JustCause3.FileFormats\Gibbed.JustCause3.FileFormats.csproj", "{159F8BBE-9207-423F-9A4B-85748BA09D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.FileFormats", "projects\Gibbed.JustCause3.FileFormats\Gibbed.JustCause3.FileFormats.csproj", "{159F8BBE-9207-423F-9A4B-85748BA09D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDesk.Options", "NDesk.Options\NDesk.Options.csproj", "{C98A6CD6-9422-4B35-8B7A-F520D75534D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDesk.Options", "projects\NDesk.Options\NDesk.Options.csproj", "{C98A6CD6-9422-4B35-8B7A-F520D75534D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.ProjectData", "Gibbed.ProjectData\Gibbed.ProjectData.csproj", "{F27A289E-3376-4653-89F3-D19C1ECABF33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.ProjectData", "projects\Gibbed.ProjectData\Gibbed.ProjectData.csproj", "{F27A289E-3376-4653-89F3-D19C1ECABF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.IO", "Gibbed.IO\Gibbed.IO.csproj", "{047857BA-DAA3-4CA7-AFB8-A1B082B28C6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.IO", "projects\Gibbed.IO\Gibbed.IO.csproj", "{047857BA-DAA3-4CA7-AFB8-A1B082B28C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.Unpack", "Gibbed.JustCause3.Unpack\Gibbed.JustCause3.Unpack.csproj", "{6D721C39-CBE3-40B7-8D93-35E13DC2318D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.Unpack", "projects\Gibbed.JustCause3.Unpack\Gibbed.JustCause3.Unpack.csproj", "{6D721C39-CBE3-40B7-8D93-35E13DC2318D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebuildFileLists", "RebuildFileLists\RebuildFileLists.csproj", "{1F5BF5D5-035B-4DBD-8678-B318491DD3D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebuildFileLists", "projects\RebuildFileLists\RebuildFileLists.csproj", "{1F5BF5D5-035B-4DBD-8678-B318491DD3D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{03FF2DC3-7B36-4F90-AF28-3E0266A42BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.PropertyFormats", "Gibbed.JustCause3.PropertyFormats\Gibbed.JustCause3.PropertyFormats.csproj", "{60B0FBA2-0906-40CD-A0CA-315AC71560BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.PropertyFormats", "projects\Gibbed.JustCause3.PropertyFormats\Gibbed.JustCause3.PropertyFormats.csproj", "{60B0FBA2-0906-40CD-A0CA-315AC71560BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertProperty", "Gibbed.JustCause3.ConvertProperty\Gibbed.JustCause3.ConvertProperty.csproj", "{149BB3DB-C1E4-4238-8F03-554B5E5F3673}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertProperty", "projects\Gibbed.JustCause3.ConvertProperty\Gibbed.JustCause3.ConvertProperty.csproj", "{149BB3DB-C1E4-4238-8F03-554B5E5F3673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.SmallUnpack", "Gibbed.JustCause3.SmallUnpack\Gibbed.JustCause3.SmallUnpack.csproj", "{23578ED4-A4F0-4CEA-980B-E446AE73632D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.SmallUnpack", "projects\Gibbed.JustCause3.SmallUnpack\Gibbed.JustCause3.SmallUnpack.csproj", "{23578ED4-A4F0-4CEA-980B-E446AE73632D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertAdf", "Gibbed.JustCause3.ConvertAdf\Gibbed.JustCause3.ConvertAdf.csproj", "{759673C0-6274-4F89-A243-3C7154E7FD2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertAdf", "projects\Gibbed.JustCause3.ConvertAdf\Gibbed.JustCause3.ConvertAdf.csproj", "{759673C0-6274-4F89-A243-3C7154E7FD2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{A12DA55C-2B9D-4899-A6A1-C039AC86FE1C}"
 EndProject
@@ -31,21 +31,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converters", "Converters", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{1547643A-B9B9-4B14-98AC-764F4AC63DAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.SmallPack", "Gibbed.JustCause3.SmallPack\Gibbed.JustCause3.SmallPack.csproj", "{7FEEB0A4-0F6C-409B-9A46-2859C5F2F99C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.SmallPack", "projects\Gibbed.JustCause3.SmallPack\Gibbed.JustCause3.SmallPack.csproj", "{7FEEB0A4-0F6C-409B-9A46-2859C5F2F99C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.Uncompress", "Gibbed.JustCause3.Uncompress\Gibbed.JustCause3.Uncompress.csproj", "{EA2BEF10-ED66-4203-BD3E-BF282F0A2486}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.Uncompress", "projects\Gibbed.JustCause3.Uncompress\Gibbed.JustCause3.Uncompress.csproj", "{EA2BEF10-ED66-4203-BD3E-BF282F0A2486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertItem", "Gibbed.JustCause3.ConvertItem\Gibbed.JustCause3.ConvertItem.csproj", "{19E8F265-A893-4FD0-8A22-B07F457E257C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertItem", "projects\Gibbed.JustCause3.ConvertItem\Gibbed.JustCause3.ConvertItem.csproj", "{19E8F265-A893-4FD0-8A22-B07F457E257C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertTask", "Gibbed.JustCause3.ConvertTask\Gibbed.JustCause3.ConvertTask.csproj", "{024D84ED-AE3A-4AA0-8635-F2767CF35BBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertTask", "projects\Gibbed.JustCause3.ConvertTask\Gibbed.JustCause3.ConvertTask.csproj", "{024D84ED-AE3A-4AA0-8635-F2767CF35BBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADF", "ADF", "{C39C15D0-18C6-4046-9FFA-4FEE4A59B773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertUpgrade", "Gibbed.JustCause3.ConvertUpgrade\Gibbed.JustCause3.ConvertUpgrade.csproj", "{A823A691-20F4-4494-BF97-67E0ADF28033}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertUpgrade", "projects\Gibbed.JustCause3.ConvertUpgrade\Gibbed.JustCause3.ConvertUpgrade.csproj", "{A823A691-20F4-4494-BF97-67E0ADF28033}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertTexture", "Gibbed.JustCause3.ConvertTexture\Gibbed.JustCause3.ConvertTexture.csproj", "{7CD1E972-CB2E-4851-A476-F793F590185D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.JustCause3.ConvertTexture", "projects\Gibbed.JustCause3.ConvertTexture\Gibbed.JustCause3.ConvertTexture.csproj", "{7CD1E972-CB2E-4851-A476-F793F590185D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Squish", "Gibbed.Squish\Gibbed.Squish.csproj", "{242D0738-AA4C-4C9C-A218-891A8F55559C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Squish", "projects\Gibbed.Squish\Gibbed.Squish.csproj", "{242D0738-AA4C-4C9C-A218-891A8F55559C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F16BCE0B-2E90-4124-8C64-F21763D3D26C}"
 	ProjectSection(SolutionItems) = preProject

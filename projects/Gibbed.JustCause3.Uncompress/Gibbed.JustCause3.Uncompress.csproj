@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6D721C39-CBE3-40B7-8D93-35E13DC2318D}</ProjectGuid>
+    <ProjectGuid>{EA2BEF10-ED66-4203-BD3E-BF282F0A2486}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.JustCause3.Unpack</RootNamespace>
-    <AssemblyName>Gibbed.JustCause3.Unpack</AssemblyName>
+    <RootNamespace>Gibbed.JustCause3.Uncompress</RootNamespace>
+    <AssemblyName>Gibbed.JustCause3.Uncompress</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\</OutputPath>
+    <OutputPath>..\..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\other\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoolStream.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,10 +58,6 @@
     <ProjectReference Include="..\Gibbed.JustCause3.FileFormats\Gibbed.JustCause3.FileFormats.csproj">
       <Project>{159F8BBE-9207-423F-9A4B-85748BA09D84}</Project>
       <Name>Gibbed.JustCause3.FileFormats</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Gibbed.ProjectData\Gibbed.ProjectData.csproj">
-      <Project>{F27A289E-3376-4653-89F3-D19C1ECABF33}</Project>
-      <Name>Gibbed.ProjectData</Name>
     </ProjectReference>
     <ProjectReference Include="..\NDesk.Options\NDesk.Options.csproj">
       <Project>{C98A6CD6-9422-4B35-8B7A-F520D75534D1}</Project>
