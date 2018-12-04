@@ -53,7 +53,7 @@ namespace Gibbed.JustCause3.ConvertAdf
 
                     var typeDefinition = runtime.GetTypeDefinition(instanceInfo.TypeHash);
                     input.Position = instanceInfo.Offset;
-                    using (var data = input.ReadToMemoryStream(instanceInfo.Size))
+                    using (var data = input.ReadToMemoryStream((int)instanceInfo.Size))
                     {
                         var exporter = new InstanceExporter(adf, runtime);
                         exporter.Write(typeDefinition, instanceInfo.Name, data, writer);

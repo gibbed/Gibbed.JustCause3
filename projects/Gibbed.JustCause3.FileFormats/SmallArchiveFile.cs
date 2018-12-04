@@ -106,7 +106,7 @@ namespace Gibbed.JustCause3.FileFormats
             var indexSize = input.ReadValueU32(endian);
 
             var entries = new List<Entry>();
-            using (var index = input.ReadToMemoryStream(indexSize))
+            using (var index = input.ReadToMemoryStream((int)indexSize))
             {
                 while (index.Length - index.Position > 15)
                 {
