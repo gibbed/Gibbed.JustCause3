@@ -97,7 +97,7 @@ namespace Gibbed.JustCause3.Unpack
                 Console.WriteLine("Warning: no active project loaded.");
             }
 
-            var hashes = manager.LoadFileLists(null);
+            var hashes = manager.LoadFileLists();
 
             var tab = new ArchiveTableFile();
             using (var input = File.OpenRead(tabPath))

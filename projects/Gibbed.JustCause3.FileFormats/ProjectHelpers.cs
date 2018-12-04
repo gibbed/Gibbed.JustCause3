@@ -50,25 +50,21 @@ namespace Gibbed.JustCause3.FileFormats
         }
 
         public static ProjectData.HashList<uint> LoadFileLists(
-            this ProjectData.Manager manager,
-            Action<uint, string, string> extra)
+            this ProjectData.Manager manager)
         {
             return manager.LoadLists(
                 "*.filelist",
                 FileHasher,
-                FileModifier,
-                extra);
+                FileModifier);
         }
 
         public static ProjectData.HashList<uint> LoadFileLists(
-            this ProjectData.Project project,
-            Action<uint, string, string> extra)
+            this ProjectData.Project project)
         {
             return project.LoadLists(
                 "*.filelist",
                 FileHasher,
-                FileModifier,
-                extra);
+                FileModifier);
         }
     }
 }

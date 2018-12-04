@@ -100,7 +100,7 @@ namespace RebuildFileLists
 
             var project = manager.ActiveProject;
 
-            var hashes = manager.LoadFileLists(null);
+            var hashes = manager.LoadFileLists();
 
             var installPath = project.InstallPath;
             var listsPath = project.ListsPath;
