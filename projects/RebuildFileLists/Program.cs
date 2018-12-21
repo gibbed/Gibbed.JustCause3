@@ -125,6 +125,7 @@ namespace RebuildFileLists
                 { "archives_win64", "game*.tab" },
                 { "dlc", "*.tab" },
                 { "patch_win64", "*.tab" },
+                { "dlc_win64", "*.tab" },
             };
 
             foreach (var kv in locations)

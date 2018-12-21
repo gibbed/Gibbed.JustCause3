@@ -1,0 +1,25 @@
+; 24/3100 (0%)
+dlc/sky_fortress/models/jc_aero/wingsuit/textures/mc_rico_wingsuit_weaponized_mpm.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/eden_wall_01_mask_dif.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/eden_wall_02_mask.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/pipe_distibutor_mask.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_mechanical_mpm.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_panels_eden_01_nrm.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_panels_chrome_dif.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_panels_chrome_glo.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_panels_lightgrey_01_dif.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/sf_panels_white_rust_01_dif.ddsc
+dlc/sky_fortress/models/jc_environment/structures/textures/wall_segment_01_mask.ddsc
+dlc/sky_fortress/models/jc_characters/corpses/civilians/11_scientist/textures/female_eden_scientist_clothes_dif.ddsc
+dlc/sky_fortress/models/jc_characters/corpses/civilians/11_scientist/textures/male_tourist_head_18_cauc_frozen_alpha_dif.ddsc
+dlc/sky_fortress/models/jc_characters/enemies/eden_hand/aegis/textures/enm_eh_aegis_dif.ddsc
+dlc/sky_fortress/models/jc_characters/main_characters/rico/textures/weaponized_wingsuit_dif.ddsc
+dlc/sky_fortress/models/jc_characters/main_characters/rico/textures/weaponized_wingsuit_metal_mpm.ddsc
+dlc/sky_fortress/models/jc_vehicles/00_shared/shared_drone/textures/shared_drone_mechanical_mpm.ddsc
+dlc/sky_fortress/models/jc_vehicles/00_shared/shared_drone/textures/shared_drone_panels_mpm.ddsc
+dlc/sky_fortress/models/jc_vehicles/02_air/v2900_drone_eden_gruntdrone/textures/gruntdrone_ao_dif.ddsc
+dlc/sky_fortress/models/jc_vehicles/02_air/v2901_drone_eden_elitedrone/textures/v2901_drone_eden_elitedrone_mul_dif.ddsc
+dlc/sky_fortress/models/jc_vehicles/02_air/v2903_drone_eden_transportdrone/textures/transportdrone_ao_dif.ddsc
+dlc/sky_fortress/models/jc_weapons/02_two_handed/w119_molten_bavarium_spitter/textures/w119_molten_bavarium_spitter_mpm.ddsc
+dlc/sky_fortress/models/jc_weapons/02_two_handed/w119_molten_bavarium_spitter/textures/w119_molten_bavarium_spitter_nrm.ddsc
+dlc/sky_fortress/models/jc_weapons/05_stationary/w505_sam_eden_heavycontroldrone/textures/w505_sam_eden_heavycontroldrone_mul_dif.ddsc
