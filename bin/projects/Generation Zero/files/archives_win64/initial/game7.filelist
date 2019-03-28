@@ -1,4 +1,4 @@
-; 15/17 (88%)
+; 17/17 (100%)
 locations/world/archipelago_s_saltholmen_saltvallen.nl
 locations/world/archipelago_s_saltholmen_skogsvik.fl
 locations/world/archipelago_s_saltholmen_skogsvik.nl
@@ -14,3 +14,5 @@ locations/world/farmlands_roadsigns03.fl
 locations/world/farmlands_roadsigns03.nl
 locations/world/intro_mission_03b_ondemand2.nl
 locations/world/intro_mission_04_distance.nl
+settings/creatures.bl
+settings/hp_settings/reserve_0.bl

@@ -1,4 +1,4 @@
-; 302/606 (49%)
+; 308/606 (50%)
 models/hp_manmade/props/outpost/textures/bench_planks_01_mpm.atx2
 models/hp_manmade/props/outpost/textures/bench_planks_01_nrm.atx1
 models/hp_manmade/props/outpost/textures/bench_planks_01_nrm.atx2
@@ -185,6 +185,12 @@ models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_mpm.atx2
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_nrm.atx1
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_nrm.atx2
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_alpha_nrm.atx1
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_alpha_nrm.atx2
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_dif.atx1
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_dif.atx2
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_mpm.atx1
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_mpm.atx2
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_nrm.atx1
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_nrm.atx2
 models/hp_shared/textures/metal/metal_painted_white_02/metal_painted_white_02_dif.atx1

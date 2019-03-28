@@ -1,4 +1,4 @@
-; 884/953 (92%)
+; 895/953 (93%)
 models/manmade/props/exterior/textures/streetlight_04_dif.atx1
 models/manmade/props/exterior/textures/streetlight_04_mpm.atx1
 models/manmade/props/exterior/textures/streetlight_04_nrm.atx1
@@ -14,6 +14,8 @@ models/manmade/props/exterior/textures/swing_01_default_nrm.atx1
 models/manmade/props/exterior/textures/swing_01_wood_dif.atx1
 models/manmade/props/exterior/textures/swing_01_wood_mpm.atx1
 models/manmade/props/exterior/textures/swing_01_wood_nrm.atx1
+models/manmade/props/exterior/textures/tarp_detail_01_dif.atx1
+models/manmade/props/exterior/textures/tarp_detail_01_nrm.atx1
 models/manmade/props/exterior/textures/tractor_tarp_01_dif.atx1
 models/manmade/props/exterior/textures/tractor_tarp_01_mpm.atx1
 models/manmade/props/exterior/textures/tractor_tarp_01_nrm.atx1
@@ -514,6 +516,12 @@ models/manmade/props/textures/books_01_a_dif.atx1
 models/manmade/props/textures/books_01_b_dif.atx1
 models/manmade/props/textures/books_01_dif.atx1
 models/manmade/props/textures/books_01_mpm.atx1
+models/manmade/props/textures/box_tarps_01_dif.atx1
+models/manmade/props/textures/box_tarps_01_dif.atx2
+models/manmade/props/textures/box_tarps_01_mpm.atx1
+models/manmade/props/textures/box_tarps_01_mpm.atx2
+models/manmade/props/textures/box_tarps_01_nrm.atx1
+models/manmade/props/textures/box_tarps_01_nrm.atx2
 models/manmade/props/textures/bunker_artillery_shells_01_dif.atx1
 models/manmade/props/textures/bunker_artillery_shells_01_dif.atx2
 models/manmade/props/textures/bunker_artillery_shells_01_mpm.atx1
@@ -836,6 +844,9 @@ models/manmade/props/textures/quilt_pattern_10.atx1
 models/manmade/props/textures/quilt_pattern_11.atx1
 models/manmade/props/textures/quilt_pattern_12.atx1
 models/manmade/props/textures/quilt_pattern_13.atx1
+models/manmade/props/textures/radiator_01_dif.atx1
+models/manmade/props/textures/radiator_01_mpm.atx1
+models/manmade/props/textures/radiator_01_nrm.atx1
 models/manmade/props/textures/radiator_02_dif.atx1
 models/manmade/props/textures/radiator_02_mpm.atx1
 models/manmade/props/textures/radiator_02_nrm.atx1

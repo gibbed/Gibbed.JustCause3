@@ -1,4 +1,4 @@
-; 847/905 (93%)
+; 854/905 (94%)
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_01_storage_dif.atx2
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_iso_01_dif.atx1
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_iso_01_dif.atx2
@@ -321,6 +321,8 @@ models/manmade/buildings/residential/textures/sidewalk_01_tint.atx1
 models/manmade/buildings/residential/textures/staircase_trims_01_dif.atx1
 models/manmade/buildings/residential/textures/staircase_trims_01_mpm.atx1
 models/manmade/buildings/residential/textures/staircase_trims_01_nrm.atx1
+models/manmade/buildings/residential/textures/utility_shed_02_tint_dif.atx1
+models/manmade/buildings/residential/textures/utility_shed_02_tint_dif.atx2
 models/manmade/buildings/residential/textures/villa_01_mask.atx1
 models/manmade/buildings/residential/textures/villa_01_mask.atx2
 models/manmade/buildings/residential/textures/villa_01_tint.atx1
@@ -733,6 +735,9 @@ models/manmade/props/exterior/textures/garden_furniture_01_mpm.atx1
 models/manmade/props/exterior/textures/garden_furniture_01_mpm.atx2
 models/manmade/props/exterior/textures/garden_furniture_01_nrm.atx1
 models/manmade/props/exterior/textures/garden_furniture_01_nrm.atx2
+models/manmade/props/exterior/textures/garden_hose_01_dif.atx1
+models/manmade/props/exterior/textures/garden_hose_01_mpm.atx1
+models/manmade/props/exterior/textures/garden_hose_01_nrm.atx1
 models/manmade/props/exterior/textures/garden_chair_plastic_01_dif.atx1
 models/manmade/props/exterior/textures/garden_chair_plastic_01_mpm.atx1
 models/manmade/props/exterior/textures/garden_chair_plastic_01_nrm.atx1
@@ -749,6 +754,8 @@ models/manmade/props/exterior/textures/hammock_cushion_01_dif.atx1
 models/manmade/props/exterior/textures/hammock_cushion_01_mpm.atx1
 models/manmade/props/exterior/textures/hammock_cushion_01_nrm.atx1
 models/manmade/props/exterior/textures/hammock_pattern_01_dif.atx1
+models/manmade/props/exterior/textures/hedges_bush_01_alpha_dif.atx1
+models/manmade/props/exterior/textures/hedges_bush_01_nrm.atx1
 models/manmade/props/exterior/textures/hedges_privet_01_alpha_dif.atx1
 models/manmade/props/exterior/textures/hedges_privet_01_nrm.atx1
 models/manmade/props/exterior/textures/hedges_privet_02_alpha_dif.atx1

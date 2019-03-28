@@ -1,4 +1,4 @@
-; 559/857 (65%)
+; 575/857 (67%)
 models/manmade/props/textures/sheet_05_nrm.atx2
 models/manmade/props/textures/sheet_pattern_01.atx1
 models/manmade/props/textures/sheet_pattern_02.atx1
@@ -407,6 +407,15 @@ models/manmade/textures/brickwall_plain_01_nrm.atx1
 models/manmade/textures/brickwall_rectangular_01_dif.atx1
 models/manmade/textures/brickwall_rectangular_01_mpm.atx1
 models/manmade/textures/brickwall_rectangular_01_nrm.atx1
+models/manmade/textures/buildings_proto_atlas_01_dif.atx1
+models/manmade/textures/buildings_proto_atlas_01_mpm.atx1
+models/manmade/textures/buildings_proto_atlas_01_nrm.atx1
+models/manmade/textures/concrete_base_01_clean_dif.atx1
+models/manmade/textures/concrete_base_01_clean_mpm.atx1
+models/manmade/textures/concrete_base_01_clean_nrm.atx1
+models/manmade/textures/concrete_base_01_dirty_dif.atx1
+models/manmade/textures/concrete_base_01_dirty_mpm.atx1
+models/manmade/textures/concrete_base_01_dirty_nrm.atx1
 models/manmade/textures/concrete_cast_01_dif.atx1
 models/manmade/textures/concrete_cast_01_dif.atx2
 models/manmade/textures/concrete_cast_01_mpm.atx1
@@ -510,6 +519,10 @@ models/manmade/textures/window_02_a_nrm.atx1
 models/manmade/textures/window_03_a_dif.atx1
 models/manmade/textures/window_03_a_mpm.atx1
 models/manmade/textures/window_03_a_nrm.atx1
+models/manmade/textures/windows_01_nrm.atx1
+models/manmade/textures/wood_floor_01_dif.atx1
+models/manmade/textures/wood_floor_01_mpm.atx1
+models/manmade/textures/wood_floor_01_nrm.atx1
 models/manmade/textures/wood_old_01_dif.atx1
 models/manmade/textures/wood_old_01_dif.atx2
 models/manmade/textures/wood_old_01_nrm.atx1
@@ -522,6 +535,9 @@ models/manmade/textures/wood_panel_01_a_clean_mpm.atx1
 models/manmade/textures/wood_panel_01_a_clean_nrm.atx1
 models/manmade/textures/wood_panel_01_a_dirty_dif.atx1
 models/manmade/textures/wood_panel_01_a_dirty_mpm.atx1
+models/manmade/textures/wood_panel_01_a_dirty_nrm.atx1
+models/manmade/textures/wood_panel_01_b_dif.atx1
+models/manmade/textures/wood_panel_01_b_mpm.atx1
 models/manmade/textures/wood_panel_02_a_clean_dif.atx1
 models/manmade/textures/wood_panel_02_a_clean_mpm.atx1
 models/manmade/textures/wood_panel_02_a_clean_nrm.atx1

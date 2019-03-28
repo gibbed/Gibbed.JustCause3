@@ -1,4 +1,4 @@
-; 536/572 (93%)
+; 558/572 (97%)
 models/equipment/ammo_dispenser_01/textures/ammo_dispenser_01_dif.atx1
 models/equipment/ammo_dispenser_01/textures/ammo_dispenser_01_dif.atx2
 models/equipment/ammo_dispenser_01/textures/ammo_dispenser_01_mpm.atx1
@@ -134,6 +134,28 @@ models/characters/humans/male/textures/hands/hands_m_01_dif.atx2
 models/characters/humans/male/textures/hands/hands_m_01_mpm.atx2
 models/characters/humans/male/textures/hands/hands_m_01_nrm.atx2
 models/characters/humans/male/textures/hands/hands_m_02_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_clown_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_b_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_c_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_d_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_e_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_f_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_g_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_h_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_i_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_j_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_k_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_l_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_m_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_n_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_o_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_p_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_q_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_r_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_makeup_s_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_military_alpha_dif.atx2
+models/characters/humans/shared/textures/facepaint/facepaint_skull_alpha_dif.atx2
 models/characters/humans/shared/textures/hair/planes/hair_curly_plane_alpha_dif.atx2
 models/characters/humans/shared/textures/hair/planes/hair_curly_plane_mpm.atx2
 models/characters/humans/shared/textures/hair/planes/hair_curly_plane_nrm.atx2

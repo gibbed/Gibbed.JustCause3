@@ -1,4 +1,4 @@
-; 359/381 (94%)
+; 371/381 (97%)
 ai/aisystem.aisystunec
 ai/tiles/36_36.navmeshc
 ai/tiles/36_37.navmeshc
@@ -15,8 +15,20 @@ ai/tiles/40_34.navmeshc
 ai/tiles/40_35.navmeshc
 ai/tiles/40_36.navmeshc
 ai/tiles/41_34.navmeshc
+animations/hp_statemachine/humans/elmer/ub_hunter_male_fp_lp.asb
+animations/characters/humans/sk100/third_person/menu/sk100_menu_idle_female_generic.ban
+animations/characters/humans/sk100/third_person/menu/sk100_menu_idle_male_generic.ban
 animations/ragdoll/ragdoll_params.brdd
+animations/statemachines/humans/player_thirdperson_fullbody.asb
+animations/statemachines/system/stateruleflags.bin
 climate/debug_types.bin
+climate/hp_germany_farmland_fall/audio_layers.worldaudioinfo_xmlc
+climate/hp_germany_farmland_fall/common/tree_diffuse_atlas_0.ddsc
+climate/hp_germany_farmland_fall/common/tree_normal_atlas_0.ddsc
+climate/hp_germany_farmland_fall/common/treeimpostors.gadfc
+climate/hp_germany_farmland_fall/terrainsystem.terrainsystemc
+climate/hp_germany_farmland_fall/vegetation.vegetationinfo
+climate/hp_germany_farmland_fall/zone_0/diffuse_textures_mid_0_0.ddsc
 terrain/hp/patches/patch_09_32_32.streampatch
 terrain/hp/patches/patch_09_32_33.streampatch
 terrain/hp/patches/patch_09_32_34.streampatch

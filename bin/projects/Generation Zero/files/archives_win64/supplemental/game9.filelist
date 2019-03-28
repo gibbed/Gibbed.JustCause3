@@ -1,4 +1,4 @@
-; 727/788 (92%)
+; 733/788 (93%)
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_dif.atx2
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_mpm.atx2
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_nrm.atx2
@@ -214,6 +214,9 @@ models/manmade/buildings/civilian/harbour/textures/row_boat_tint_dif.atx1
 models/manmade/buildings/civilian/harbour/textures/row_boat_tint_dif.atx2
 models/manmade/buildings/civilian/harbour/textures/row_boat_yellow_dif.atx1
 models/manmade/buildings/civilian/harbour/textures/row_boat_yellow_dif.atx2
+models/manmade/buildings/civilian/harbour/textures/tyres_01_dif.atx1
+models/manmade/buildings/civilian/harbour/textures/tyres_01_mpm.atx1
+models/manmade/buildings/civilian/harbour/textures/tyres_01_nrm.atx1
 models/manmade/buildings/civilian/churches/churches_01_side_left_02.hrmeshc
 models/manmade/buildings/civilian/churches/churches_01_side_left_roof_02.hrmeshc
 models/manmade/buildings/civilian/churches/churches_01_side_right_02.hrmeshc
@@ -341,6 +344,9 @@ models/manmade/buildings/civilian/churches/textures/wall_trims_01_nrm.atx1
 models/manmade/buildings/civilian/churches/textures/wall_trims_01_nrm.atx2
 models/manmade/buildings/civilian/churches/textures/windows_church_01_alpha_dif.atx1
 models/manmade/buildings/civilian/churches/textures/windows_church_01_nrm.atx1
+models/manmade/buildings/civilian/churches/textures/wooden_tile_01_dif.atx1
+models/manmade/buildings/civilian/churches/textures/wooden_tile_01_mpm.atx1
+models/manmade/buildings/civilian/churches/textures/wooden_tile_01_nrm.atx1
 models/manmade/buildings/civilian/kiosk/textures/base_01_tint.atx1
 models/manmade/buildings/civilian/kiosk/textures/kiosk_door_01_dif.atx1
 models/manmade/buildings/civilian/kiosk/textures/kiosk_door_01_mpm.atx1

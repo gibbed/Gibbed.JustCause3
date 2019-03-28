@@ -1,4 +1,4 @@
-; 376/565 (66%)
+; 378/565 (66%)
 models/equipment/car_battery_01/textures/car_battery_01_dif.atx1
 models/equipment/car_battery_01/textures/car_battery_01_dif.atx2
 models/equipment/car_battery_01/textures/car_battery_01_mpm.atx1
@@ -289,6 +289,8 @@ models/hp_manmade/buildings/cabins/textures/roof_tiles_01_nrm.atx1
 models/hp_manmade/buildings/cabins/textures/roof_tiles_01_nrm.atx2
 models/hp_manmade/buildings/cabins/textures/roof_tiles_02_dif.atx1
 models/hp_manmade/buildings/cabins/textures/roof_tiles_02_dif.atx2
+models/hp_manmade/buildings/cabins/textures/windows_01_alpha_dif.atx1
+models/hp_manmade/buildings/cabins/textures/windows_01_mpm.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_01_mpm.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_01_nrm.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_02_dif.atx1

@@ -1,4 +1,11 @@
-; 44/69 (63%)
+; 51/69 (73%)
+climate/hp_germany_farmland_fall/zone_0/diffuse_textures_near_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/height_textures_mid_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/height_textures_near_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/normal_textures_mid_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/normal_textures_near_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/tint_textures_mid_0_0.ddsc
+climate/hp_germany_farmland_fall/zone_0/variation_textures_mid_0_0.ddsc
 editor/entities/ammo/equipment_ammo_12ga_bird_01.ee
 editor/entities/ammo/equipment_ammo_12ga_buck_01.ee
 editor/entities/ammo/equipment_ammo_12ga_slug_01.ee
