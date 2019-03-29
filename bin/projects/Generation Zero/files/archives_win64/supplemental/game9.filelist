@@ -1,4 +1,4 @@
-; 733/788 (93%)
+; 739/788 (93%)
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_dif.atx2
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_mpm.atx2
 models/hp_weapons/rifle_lever_action_45_70_01/textures/rifle_lever_action_45_70_01_nrm.atx2
@@ -336,6 +336,10 @@ models/manmade/buildings/civilian/churches/textures/wall_stones_01_nrm.atx1
 models/manmade/buildings/civilian/churches/textures/wall_stones_01_nrm.atx2
 models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_dif.atx1
 models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_dif.atx2
+models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_mpm.atx1
+models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_mpm.atx2
+models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_nrm.atx1
+models/manmade/buildings/civilian/churches/textures/wall_stones_dirty_01_nrm.atx2
 models/manmade/buildings/civilian/churches/textures/wall_trims_01_dif.atx1
 models/manmade/buildings/civilian/churches/textures/wall_trims_01_dif.atx2
 models/manmade/buildings/civilian/churches/textures/wall_trims_01_mpm.atx1
@@ -577,6 +581,8 @@ models/manmade/buildings/military/bunkers/textures/artillery_exterior_lid_01_nrm
 models/manmade/buildings/military/bunkers/textures/artillery_exterior_lid_01_nrm.atx2
 models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_dif.atx1
 models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_dif.atx2
+models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_mpm.atx1
+models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_mpm.atx2
 models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_nrm.atx1
 models/manmade/buildings/military/bunkers/textures/bunker_cave_01_detail_01_nrm.atx2
 models/manmade/buildings/military/bunkers/textures/bunker_cave_01_dif.atx1

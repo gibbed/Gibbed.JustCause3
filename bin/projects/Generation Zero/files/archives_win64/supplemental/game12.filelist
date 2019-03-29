@@ -1,4 +1,4 @@
-; 575/857 (67%)
+; 581/857 (67%)
 models/manmade/props/textures/sheet_05_nrm.atx2
 models/manmade/props/textures/sheet_pattern_01.atx1
 models/manmade/props/textures/sheet_pattern_02.atx1
@@ -78,6 +78,8 @@ models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_metal
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_metallic_nrm.atx2
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_mpm.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_mpm.atx2
+models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_nrm.atx1
+models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_nrm.atx2
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_police_dif.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_car_paint_police_dif.atx2
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_details_black_dif.atx1
@@ -92,6 +94,7 @@ models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_interior_detail
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_interior_dif.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_interior_mpm.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_interior_nrm.atx1
+models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_lights_alpha_dif.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_lights_dif.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_lights_emi.atx1
 models/manmade/props/vehicles/car_sedan_01/textures/car_sedan_01_lights_mpm.atx1
@@ -145,6 +148,8 @@ models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_dif.a
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_dif.atx2
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_mpm.atx1
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_mpm.atx2
+models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_nrm.atx1
+models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_nrm.atx2
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_yellow_dif.atx1
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_car_paint_yellow_dif.atx2
 models/manmade/props/vehicles/car_sedan_02/textures/car_sedan_02_color_tint_tnt.atx1
@@ -386,6 +391,7 @@ models/manmade/props/vehicles/truck_01/textures/truck_01_wheels_mpm.atx1
 models/manmade/props/vehicles/truck_01/textures/truck_01_wheels_nrm.atx1
 models/manmade/props/vehicles/truck_01/textures/truck_01_windows_alpha_dif.atx1
 models/manmade/props/vehicles/truck_01/textures/truck_01_windows_mpm.atx1
+models/manmade/props/vehicles/truck_01/textures/truck_01_windows_nrm.atx1
 models/manmade/textures/asphalt_sidewalk_01_dif.atx1
 models/manmade/textures/asphalt_sidewalk_01_mpm.atx1
 models/manmade/textures/asphalt_sidewalk_01_nrm.atx1

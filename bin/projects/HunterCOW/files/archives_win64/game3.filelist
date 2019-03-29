@@ -1,4 +1,4 @@
-; 185/199 (92%)
+; 190/199 (95%)
 ai/tiles/55_39.navmeshc
 ai/tiles/55_40.navmeshc
 ai/tiles/55_41.navmeshc
@@ -179,8 +179,13 @@ ai/tiles/9_55.navmeshc
 ai/tiles/9_56.navmeshc
 ai/tiles/9_57.navmeshc
 ai/tiles/9_9.navmeshc
+animations/hp_statemachine/humans/elmer/ub_hunter_male_fp_lp.asb
 animations/ragdoll/ragdoll_params.brdd
 animations/statemachine/stateruleflags.bin
 asynchronous/asyncbrags.asynccc
 asynchronous/asyncbrags.stringlookup
 climate/debug_types.bin
+climate/hp_africa/audio_layers.worldaudioinfo_xmlc
+climate/hp_africa/common/tree_diffuse_atlas_0.ddsc
+climate/hp_africa/common/tree_normal_atlas_0.ddsc
+climate/hp_africa/common/treeimpostors.gadfc

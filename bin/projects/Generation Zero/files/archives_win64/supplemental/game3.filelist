@@ -1,4 +1,4 @@
-; 4089/4093 (99%)
+; 4092/4093 (99%)
 models/ammunition/textures/ammo_all_01_dif.atx1
 models/ammunition/textures/ammo_all_01_dif.atx2
 models/ammunition/textures/ammo_all_01_mpm.atx1
@@ -56,6 +56,7 @@ models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_colmask.a
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_dif.atx2
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_mpm.atx2
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_nrm.atx2
+models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_dif.atx2
 models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_mpm.atx2
 models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_nrm.atx2
 models/characters/humans/female/textures/face/face_f_01/face_f_01_dif.atx2
@@ -95,6 +96,8 @@ models/characters/humans/female/textures/hands/hands_f_01_dif.atx2
 models/characters/humans/female/textures/hands/hands_f_01_mpm.atx2
 models/characters/humans/female/textures/hands/hands_f_01_nrm.atx2
 models/characters/humans/female/textures/hands/hands_f_02_dif.atx2
+models/characters/humans/female/textures/hands/hands_f_02_mpm.atx2
+models/characters/humans/female/textures/hands/hands_f_02_nrm.atx2
 models/characters/humans/male/textures/clothes/accessory_hands_03/accessory_hands_03_a_colmask.atx2
 models/characters/humans/male/textures/clothes/accessory_hands_03/accessory_hands_03_a_dif.atx2
 models/characters/humans/male/textures/clothes/accessory_hands_03/accessory_hands_03_a_mpm.atx2

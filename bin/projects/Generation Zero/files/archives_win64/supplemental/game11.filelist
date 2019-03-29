@@ -1,4 +1,4 @@
-; 895/953 (93%)
+; 899/953 (94%)
 models/manmade/props/exterior/textures/streetlight_04_dif.atx1
 models/manmade/props/exterior/textures/streetlight_04_mpm.atx1
 models/manmade/props/exterior/textures/streetlight_04_nrm.atx1
@@ -134,6 +134,7 @@ models/manmade/props/interior/textures/ai_chair_01_mpm.atx2
 models/manmade/props/interior/textures/ai_chair_01_nrm.atx1
 models/manmade/props/interior/textures/ai_chair_01_nrm.atx2
 models/manmade/props/interior/textures/ai_nametags_01_dif.atx1
+models/manmade/props/interior/textures/ai_nametags_01_mpm.atx1
 models/manmade/props/interior/textures/ai_nametags_01_nrm.atx1
 models/manmade/props/interior/textures/bankers_lamp_01_dif.atx1
 models/manmade/props/interior/textures/bankers_lamp_01_emi.atx1
@@ -455,6 +456,8 @@ models/manmade/props/mission_items/mission_journal_01/texture/mission_journal_01
 models/manmade/props/mission_items/mission_journal_01/texture/mission_journal_01_nrm.atx1
 models/manmade/props/mission_items/mission_journal_01/texture/mission_journal_01_nrm.atx2
 models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_damaged_dif.atx1
+models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_damaged_mpm.atx1
+models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_damaged_nrm.atx1
 models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_dif.atx1
 models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_mpm.atx1
 models/manmade/props/mission_items/mission_key_card_01/textures/mission_key_card_01_nrm.atx1
@@ -801,6 +804,7 @@ models/manmade/props/textures/pinewood_tile_01_mpm.atx1
 models/manmade/props/textures/pinewood_tile_01_nrm.atx1
 models/manmade/props/textures/pinewood_tile_01_red_dif.atx1
 models/manmade/props/textures/playing_cards_01_alpha_dif.atx1
+models/manmade/props/textures/playing_cards_01_dif.atx1
 models/manmade/props/textures/playing_cards_01_mpm.atx1
 models/manmade/props/textures/plywood_tile_01_dif.atx1
 models/manmade/props/textures/plywood_tile_01_mpm.atx1

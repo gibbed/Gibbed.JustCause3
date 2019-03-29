@@ -1,4 +1,4 @@
-; 854/905 (94%)
+; 858/905 (94%)
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_01_storage_dif.atx2
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_iso_01_dif.atx1
 models/manmade/buildings/military/bunkers/textures/bunker_wall_segment_iso_01_dif.atx2
@@ -658,8 +658,12 @@ models/manmade/props/exterior/signs/textures/signs_posten_01_mpm.atx1
 models/manmade/props/exterior/signs/textures/signs_posten_01_nrm.atx1
 models/manmade/props/exterior/signs/textures/signs_short_square_01_tobakspel_01_dif.atx1
 models/manmade/props/exterior/signs/textures/signs_short_square_01_tobakspel_01_emi.atx1
+models/manmade/props/exterior/stones/textures/stone_01_dif.atx1
+models/manmade/props/exterior/stones/textures/stone_01_dif.atx2
 models/manmade/props/exterior/stones/textures/stone_01_mpm.atx1
 models/manmade/props/exterior/stones/textures/stone_01_mpm.atx2
+models/manmade/props/exterior/stones/textures/stone_01_nrm.atx1
+models/manmade/props/exterior/stones/textures/stone_01_nrm.atx2
 models/manmade/props/exterior/stones/textures/stone_01_runes_dif.atx1
 models/manmade/props/exterior/stones/textures/stone_01_runes_dif.atx2
 models/manmade/props/exterior/stones/textures/stone_01_runes_nrm.atx1

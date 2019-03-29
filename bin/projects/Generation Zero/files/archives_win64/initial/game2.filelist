@@ -1,4 +1,4 @@
-; 2397/2503 (95%)
+; 2403/2503 (96%)
 editor/entities/equipment/ammo_station_01/ammo_station_01.ee
 editor/entities/equipment/ammo_station_01/ammo_station_01_prop.ee
 editor/entities/equipment/ammo_station_01/ammo_station_01_thrown.ee
@@ -1448,6 +1448,8 @@ models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_mpm.atx1
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_mpm.ddsc
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_nrm.atx1
 models/characters/humans/female/textures/clothes/pants_09/pants_f_09_a_nrm.ddsc
+models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_dif.atx1
+models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_dif.ddsc
 models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_mpm.atx1
 models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_mpm.ddsc
 models/characters/humans/female/textures/clothes/shirt_01/shirt_f_01_nrm.atx1
@@ -1526,6 +1528,10 @@ models/characters/humans/female/textures/hands/hands_f_01_nrm.atx1
 models/characters/humans/female/textures/hands/hands_f_01_nrm.ddsc
 models/characters/humans/female/textures/hands/hands_f_02_dif.atx1
 models/characters/humans/female/textures/hands/hands_f_02_dif.ddsc
+models/characters/humans/female/textures/hands/hands_f_02_mpm.atx1
+models/characters/humans/female/textures/hands/hands_f_02_mpm.ddsc
+models/characters/humans/female/textures/hands/hands_f_02_nrm.atx1
+models/characters/humans/female/textures/hands/hands_f_02_nrm.ddsc
 models/characters/humans/loot/loot_backpack_medium_size_01.hrmeshc
 models/characters/humans/loot/loot_backpack_medium_size_01.meshc
 models/characters/humans/loot/loot_backpack_medium_size_01.model_deps

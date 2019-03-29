@@ -1,7 +1,8 @@
-; 3605/4514 (79%)
+; 3614/4514 (80%)
 models/equipment/communications_array_01/communications_array_base.hrmeshc
 models/equipment/communications_array_01/communications_array_combined_level2.hrmeshc
 models/equipment/communications_array_01/communications_array_combined_level3.hrmeshc
+models/hp_equipment/rangefinder_01/textures/rangefinder_01_lens_nrm.ddsc
 models/hp_characters/critters/common_gull/common_gull_a.meshc
 models/hp_characters/critters/common_gull/common_gull_a.modelc
 models/hp_characters/critters/common_gull/common_gull_body.meshc
@@ -11,6 +12,7 @@ models/hp_characters/critters/common_gull/common_gull_wing_l.modelc
 models/hp_characters/critters/common_gull/common_gull_wing_r.meshc
 models/hp_characters/critters/common_gull/common_gull_wing_r.modelc
 models/hp_characters/critters/common_gull/maps/common_gull_alpha_dif.ddsc
+models/hp_characters/critters/common_gull/maps/common_gull_dif.ddsc
 models/hp_characters/critters/common_gull/maps/common_gull_mpm.ddsc
 models/hp_characters/critters/common_gull/maps/common_gull_nrm.ddsc
 models/hp_characters/critters/raven/common_raven_a.meshc
@@ -22,6 +24,7 @@ models/hp_characters/critters/raven/common_raven_wing_l.modelc
 models/hp_characters/critters/raven/common_raven_wing_r.meshc
 models/hp_characters/critters/raven/common_raven_wing_r.modelc
 models/hp_characters/critters/raven/maps/raven_alpha_dif.ddsc
+models/hp_characters/critters/raven/maps/raven_dif.ddsc
 models/hp_characters/critters/raven/maps/raven_mpm.ddsc
 models/hp_characters/critters/raven/maps/raven_nrm.ddsc
 models/hp_manmade/buildings/cabins_wooden_01/cabin_wooden_01_cabin_long_variation_01.meshc
@@ -49,6 +52,7 @@ models/hp_scopes/scope_4to8x32mm/textures/scope_4to8x32mm_01_nrm.atx1
 models/hp_scopes/scope_4to8x32mm/textures/scope_4to8x32mm_scope_lens_01_alpha_dif.atx1
 models/hp_scopes/scope_4to8x32mm/textures/scope_4to8x32mm_scope_lens_01_mpm.atx1
 models/hp_scopes/scope_revolver/textures/scope_revolver_01_dif.atx1
+models/hp_scopes/scope_revolver/textures/scope_revolver_01_glo.atx1
 models/hp_scopes/scope_revolver/textures/scope_revolver_01_mpm.atx1
 models/hp_scopes/scope_revolver/textures/scope_revolver_01_nrm.atx1
 models/hp_scopes/scope_revolver/textures/scope_revolver_lens_01_alpha_dif.atx1
@@ -58,13 +62,16 @@ models/hp_scopes/scope_revolver/textures/scope_revolver_lensback_01_mpm.atx1
 models/hp_scopes/scope_shotgun_red_dot/textures/scope_red_dot_lens_01_alpha_dif.atx1
 models/hp_scopes/scope_shotgun_red_dot/textures/scope_red_dot_lens_back_01_alpha_dif.atx1
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_dif.atx1
+models/hp_scopes/w_carbon/textures/w_carbon_scope_01_glo.atx1
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_mpm.atx1
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_nrm.atx1
 models/hp_vegetation/z00/beech/beech_tree_07_a.hrmeshc
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_dif.atx1
+models/hp_weapons/revolver_44_01/textures/revolver_44_01_glo.atx1
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_mpm.atx1
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_nrm.atx1
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_dif.atx1
+models/hp_weapons/revolver_454_01/textures/revolver_454_01_glo.atx1
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_mpm.atx1
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_nrm.atx1
 models/hp_weapons/rifle_223_01/textures/rifle_223_details_dif.atx1
@@ -3450,6 +3457,7 @@ models/weapon_attachments/handgun_scope_2_4x_20mm_01/textures/handgun_scope_2_4x
 models/weapon_attachments/handgun_scope_2_4x_20mm_01/textures/handgun_scope_2_4x_20mm_grade_5_01_nrm.atx1
 models/weapon_attachments/lens_attachment_01/textures/lens_attachment_dif.atx1
 models/weapon_attachments/lens_attachment_01/textures/lens_attachment_mpm.atx1
+models/weapon_attachments/lens_attachment_01/textures/lens_attachment_nrm.ddsc
 models/weapon_attachments/mag_extension_32acp_01/textures/mag_extension_32acp_01_dif.atx1
 models/weapon_attachments/mag_extension_32acp_01/textures/mag_extension_32acp_01_mpm.atx1
 models/weapon_attachments/mag_extension_32acp_01/textures/mag_extension_32acp_01_nrm.atx1
@@ -3509,6 +3517,7 @@ models/weapon_attachments/rifle_scope_4-8x_32mm_01/textures/rifle_scope_4-8x_32m
 models/weapon_attachments/rifle_scope_4-8x_32mm_01/textures/rifle_scope_4-8x_32mm_grade_5_01_nrm.atx1
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_dif.atx1
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_mpm.atx1
+models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_nrm.atx1
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_dif.atx1
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_mpm.atx1
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_nrm.atx1

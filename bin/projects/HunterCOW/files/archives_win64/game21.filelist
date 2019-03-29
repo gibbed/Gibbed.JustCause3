@@ -1,9 +1,10 @@
-; 188/282 (66%)
+; 189/282 (67%)
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_dif.hmddsc
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_mpm.hmddsc
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_nrm.hmddsc
 models/hp_scopes/w_carbon/textures/w_carbon_scope_lens_01_dif_alpha.hmddsc
 models/hp_scopes/w_carbon/textures/w_carbon_scope_lens_01_mpm.hmddsc
+models/hp_scopes/w_carbon/textures/w_carbon_scope_lens_01_nrm.ddsc
 models/hp_shared/dummy_textures/dummy_cloud_mask.hmddsc
 models/hp_shared/models/metal_details/textures/metal_details_01_dif.hmddsc
 models/hp_shared/models/metal_details/textures/metal_details_01_mpm.hmddsc

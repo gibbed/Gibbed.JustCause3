@@ -1,4 +1,4 @@
-; 301/622 (48%)
+; 323/622 (51%)
 models/hp_shared/textures/wood/wood_plain_01/wood_plain_01_dif.atx1
 models/hp_shared/textures/wood/wood_plain_01/wood_plain_01_dif.atx2
 models/hp_shared/textures/wood/wood_plain_01/wood_plain_01_mpm.atx1
@@ -7,11 +7,15 @@ models/hp_shared/textures/wood/wood_plain_01/wood_plain_01_nrm.atx1
 models/hp_shared/textures/wood/wood_plain_01/wood_plain_01_nrm.atx2
 models/hp_shared/textures/wood/wood_plain_dark_01/wood_plain_dark_01_dif.atx1
 models/hp_shared/textures/wood/wood_plain_dark_01/wood_plain_dark_01_dif.atx2
+models/hp_shared/textures/wood/wood_plain_dark_01/wood_plain_dark_01_nrm.atx1
+models/hp_shared/textures/wood/wood_plain_dark_01/wood_plain_dark_01_nrm.atx2
 models/hp_shared/textures/wood/wood_plank_ends_01/wood_plank_ends_01_dif.atx1
 models/hp_shared/textures/wood/wood_plank_ends_01/wood_plank_ends_01_mpm.atx1
 models/hp_shared/textures/wood/wood_plank_ends_01/wood_plank_ends_01_nrm.atx1
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_dif.atx1
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_dif.atx2
+models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_glo.atx1
+models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_glo.atx2
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_mpm.atx1
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_mpm.atx2
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_nrm.atx1
@@ -21,21 +25,28 @@ models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_variation_01_dif.at
 models/hp_shared/textures/wood/wood_planks_01/wood_planks_01_woodfiber_detail_nrm.atx1
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_dif.atx1
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_dif.atx2
+models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_glo.atx1
+models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_glo.atx2
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_mpm.atx1
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_mpm.atx2
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_nrm.atx1
 models/hp_shared/textures/wood/wood_planks_03/wood_planks_b_03_nrm.atx2
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_dif.atx1
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_dif.atx2
+models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_glo.atx1
+models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_glo.atx2
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_mpm.atx1
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_mpm.atx2
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_nrm.atx1
 models/hp_shared/textures/wood/wood_plywood_01/wood_plywood_01_nrm.atx2
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_01_alpha_mpm.atx1
+models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_01_alpha_nrm.atx1
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_01_dif.atx1
+models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_01_mpm.atx1
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_01_nrm.atx1
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_02_alpha_mpm.atx1
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_02_dif.atx1
+models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_02_mpm.atx1
 models/hp_shared/textures/wood/wood_spruce_01/wood_spruce_01_02_nrm.atx1
 models/hp_sights/rifle_red_dot_01/textures/scope_shotgun_red_dot_01_dif.atx1
 models/hp_sights/rifle_red_dot_01/textures/scope_shotgun_red_dot_01_dif.atx2
@@ -75,6 +86,8 @@ models/hp_vegetation/z00/beech/textures/beech_foliage_bush_mpm.atx1
 models/hp_vegetation/z00/beech/textures/beech_foliage_bush_nrm.atx1
 models/hp_vegetation/z00/beech/textures/beech_foliage_bush_orange_alpha_dif.atx1
 models/hp_vegetation/z00/beech/textures/beech_foliage_tree_alpha_dif.atx1
+models/hp_vegetation/z00/beech/textures/beech_foliage_tree_dif.atx1
+models/hp_vegetation/z00/beech/textures/beech_foliage_tree_dif.atx2
 models/hp_vegetation/z00/beech/textures/beech_foliage_tree_green_alpha_dif.atx1
 models/hp_vegetation/z00/beech/textures/beech_foliage_tree_mpm.atx1
 models/hp_vegetation/z00/beech/textures/beech_foliage_tree_nrm.atx1
@@ -101,6 +114,7 @@ models/hp_vegetation/z00/beech/textures/beech_trunk_alpha_nrm.atx1
 models/hp_vegetation/z00/beech/textures/beech_trunk_dif.atx1
 models/hp_vegetation/z00/beech/textures/beech_trunk_mask_mask.atx1
 models/hp_vegetation/z00/beech/textures/beech_trunk_mpm.atx1
+models/hp_vegetation/z00/beech/textures/beech_trunk_nrm.atx1
 models/hp_vegetation/z00/beech/textures/beech_trunk_young_mask_mask.atx1
 models/hp_vegetation/z00/dead/textures/dead_spruce_log_lrg_01_dif.atx1
 models/hp_vegetation/z00/dead/textures/dead_spruce_log_lrg_01_dif.atx2
@@ -135,6 +149,7 @@ models/hp_vegetation/z00/field/textures/potato_dif.atx1
 models/hp_vegetation/z00/field/textures/potato_mpm.atx1
 models/hp_vegetation/z00/field/textures/potato_nrm.atx1
 models/hp_vegetation/z00/field/textures/straw_bale_alpha_dif.atx1
+models/hp_vegetation/z00/field/textures/straw_bale_dif.atx1
 models/hp_vegetation/z00/field/textures/straw_bale_mpm.atx1
 models/hp_vegetation/z00/field/textures/straw_bale_nrm.atx1
 models/hp_vegetation/z00/field/textures/straw_debris_alpha_dif.atx1
@@ -182,6 +197,7 @@ models/hp_vegetation/z00/rocks/textures/rock_pebbles_mpm.atx1
 models/hp_vegetation/z00/rocks/textures/rock_pebbles_nrm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_df_foliage_alpha_dif.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_df_foliage_alpha_dif.atx2
+models/hp_vegetation/z00/spruce/textures/spruce_df_foliage_dif.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_df_foliage_mpm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_df_foliage_nrm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_foliage_tree_alpha_dif.atx1
@@ -190,6 +206,7 @@ models/hp_vegetation/z00/spruce/textures/spruce_foliage_tree_nrm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_01_alpha_nrm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_01_dif.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_01_mpm.atx1
+models/hp_vegetation/z00/spruce/textures/spruce_trunk_01_nrm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_02_dif.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_02_mpm.atx1
 models/hp_vegetation/z00/spruce/textures/spruce_trunk_02_nrm.atx1
@@ -199,6 +216,7 @@ models/hp_vegetation/z00/underbrush/textures/branches_01_mpm.atx1
 models/hp_vegetation/z00/underbrush/textures/branches_01_mpm.atx2
 models/hp_vegetation/z00/underbrush/textures/branches_01_nrm.atx1
 models/hp_vegetation/z00/underbrush/textures/branches_01_nrm.atx2
+models/hp_vegetation/z00/underbrush/textures/branches_plain_01_dif.atx1
 models/hp_vegetation/z00/underbrush/textures/branches_plain_01_mpm.atx1
 models/hp_vegetation/z00/underbrush/textures/branches_plain_01_nrm.atx1
 models/hp_vegetation/z00/underbrush/textures/fern_alpha_dif.atx1
@@ -276,6 +294,8 @@ models/hp_vegetation/z01/rocks/textures/rock_bare_02_nrm.atx1
 models/hp_vegetation/z01/rocks/textures/rock_leaves_01_alpha_nrm.atx1
 models/hp_vegetation/z01/rocks/textures/rock_leaves_01_dif.atx1
 models/hp_vegetation/z01/rocks/textures/rock_leaves_01_mpm.atx1
+models/hp_vegetation/z01/rocks/textures/rock_leaves_01_nrm.atx1
+models/hp_vegetation/z01/rocks/textures/rock_leaves_01_nrm.atx2
 models/hp_vegetation/z01/rocks/textures/rock_mossy_02_dif.atx1
 models/hp_vegetation/z01/rocks/textures/rock_mossy_02_dif.atx2
 models/hp_vegetation/z01/rocks/textures/rock_mossy_02_mpm.atx1
@@ -292,9 +312,11 @@ models/hp_vegetation/z01/underbrush/textures/branches_plain_01_dif.atx1
 models/hp_vegetation/z01/underbrush/textures/branches_plain_01_mpm.atx1
 models/hp_vegetation/z01/underbrush/textures/branches_plain_01_nrm.atx1
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_dif.atx2
+models/hp_weapons/revolver_44_01/textures/revolver_44_01_glo.atx2
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_mpm.atx2
 models/hp_weapons/revolver_44_01/textures/revolver_44_01_nrm.atx2
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_dif.atx2
+models/hp_weapons/revolver_454_01/textures/revolver_454_01_glo.atx2
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_mpm.atx2
 models/hp_weapons/revolver_454_01/textures/revolver_454_01_nrm.atx2
 models/hp_weapons/rifle_223_01/textures/rifle_223_details_dif.atx2

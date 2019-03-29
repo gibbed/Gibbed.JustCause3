@@ -1,8 +1,9 @@
-; 80/98 (81%)
+; 83/98 (84%)
 models/hp_equipment/first_aid_kit_01/textures/first_aid_kit_01_dif.atx3
 models/hp_equipment/first_aid_kit_01/textures/first_aid_kit_01_mpm.atx3
 models/hp_equipment/first_aid_kit_01/textures/first_aid_kit_01_nrm.atx3
 models/hp_shared/models/metal_details/textures/metal_details_01_dif.atx3
+models/hp_shared/models/metal_details/textures/metal_details_01_glo.atx3
 models/hp_shared/models/metal_details/textures/metal_details_01_mpm.atx3
 models/hp_shared/models/metal_details/textures/metal_details_01_nrm.atx3
 models/hp_shared/textures/metal/mteal_trim_01/metal_trim_01_dif.atx3
@@ -12,6 +13,8 @@ models/characters/humans/female/textures/hands/hands_f_01_dif.atx3
 models/characters/humans/female/textures/hands/hands_f_01_mpm.atx3
 models/characters/humans/female/textures/hands/hands_f_01_nrm.atx3
 models/characters/humans/female/textures/hands/hands_f_02_dif.atx3
+models/characters/humans/female/textures/hands/hands_f_02_mpm.atx3
+models/characters/humans/female/textures/hands/hands_f_02_nrm.atx3
 models/characters/humans/male/textures/hands/hands_m_01_dif.atx3
 models/characters/humans/male/textures/hands/hands_m_01_mpm.atx3
 models/characters/humans/male/textures/hands/hands_m_01_nrm.atx3

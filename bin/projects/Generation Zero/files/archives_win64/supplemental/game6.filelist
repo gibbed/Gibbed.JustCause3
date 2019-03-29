@@ -1,4 +1,4 @@
-; 299/703 (42%)
+; 307/703 (43%)
 models/hp_manmade/buildings/lookout_platform/textures/lookout_details_01_dif.atx1
 models/hp_manmade/buildings/lookout_platform/textures/lookout_details_01_mpm.atx1
 models/hp_manmade/buildings/lookout_platform/textures/lookout_details_01_nrm.atx1
@@ -118,6 +118,8 @@ models/hp_manmade/buildings/shooting_range_01/textures/target_01_nrm.atx1
 models/hp_manmade/buildings/shooting_range_01/textures/target_01_nrm.atx2
 models/hp_manmade/buildings/totems/textures/totem_moss_01_dif.atx1
 models/hp_manmade/buildings/totems/textures/totem_moss_01_dif.atx2
+models/hp_manmade/buildings/totems/textures/totem_moss_01_mpm.atx1
+models/hp_manmade/buildings/totems/textures/totem_moss_01_mpm.atx2
 models/hp_manmade/buildings/totems/textures/totem_moss_01_nrm.atx1
 models/hp_manmade/buildings/totems/textures/totem_moss_01_nrm.atx2
 models/hp_manmade/buildings/windmill/textures/windmill_details_01_dif.atx1
@@ -205,9 +207,15 @@ models/hp_manmade/nature/cairn/chairn_round_01_dif.atx1
 models/hp_manmade/nature/cairn/chairn_round_01_dif.atx2
 models/hp_manmade/nature/cairn/chairn_round_01_masks_mask.atx1
 models/hp_manmade/nature/cairn/chairn_round_01_masks_tint.atx1
+models/hp_manmade/nature/cairn/chairn_round_01_mpm.atx1
+models/hp_manmade/nature/cairn/chairn_round_01_mpm.atx2
 models/hp_manmade/nature/cairn/chairn_round_01_nrm.atx1
 models/hp_manmade/nature/cairn/chairn_round_01_nrm.atx2
+models/hp_manmade/nature/cairn/chairn_round_01_pnw_dif.atx1
+models/hp_manmade/nature/cairn/chairn_round_01_pnw_dif.atx2
 models/hp_manmade/nature/cairn/chairn_round_01_pnw_masks_mask.atx1
+models/hp_manmade/nature/cairn/chairn_round_01_pnw_mpm.atx1
+models/hp_manmade/nature/cairn/chairn_round_01_pnw_mpm.atx2
 models/hp_manmade/nature/cairn/chairn_round_01_pnw_nrm.atx1
 models/hp_manmade/nature/cairn/chairn_round_01_pnw_nrm.atx2
 models/hp_manmade/nature/log/textures/log_blend_01_mask.atx1

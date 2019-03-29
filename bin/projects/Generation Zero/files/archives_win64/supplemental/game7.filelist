@@ -1,4 +1,4 @@
-; 308/606 (50%)
+; 335/606 (55%)
 models/hp_manmade/props/outpost/textures/bench_planks_01_mpm.atx2
 models/hp_manmade/props/outpost/textures/bench_planks_01_nrm.atx1
 models/hp_manmade/props/outpost/textures/bench_planks_01_nrm.atx2
@@ -111,18 +111,23 @@ models/hp_scopes/scope_revolver/textures/scope_revolver_lens_01_mpm.atx2
 models/hp_scopes/scope_revolver/textures/scope_revolver_lensback_01_alpha_dif.atx2
 models/hp_scopes/scope_revolver/textures/scope_revolver_lensback_01_mpm.atx2
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_dif.atx2
+models/hp_scopes/w_carbon/textures/w_carbon_scope_01_glo.atx2
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_mpm.atx2
 models/hp_scopes/w_carbon/textures/w_carbon_scope_01_nrm.atx2
 models/hp_shared/dummy_textures/dummy_cloud_mask.atx1
 models/hp_shared/dummy_textures/dummy_cloud_mask.atx2
 models/hp_shared/models/metal_details/textures/metal_details_01_dif.atx1
 models/hp_shared/models/metal_details/textures/metal_details_01_dif.atx2
+models/hp_shared/models/metal_details/textures/metal_details_01_glo.atx1
+models/hp_shared/models/metal_details/textures/metal_details_01_glo.atx2
 models/hp_shared/models/metal_details/textures/metal_details_01_mpm.atx1
 models/hp_shared/models/metal_details/textures/metal_details_01_mpm.atx2
 models/hp_shared/models/metal_details/textures/metal_details_01_nrm.atx1
 models/hp_shared/models/metal_details/textures/metal_details_01_nrm.atx2
 models/hp_shared/textures/concrete/concrete_01/concrete_01_dif.atx1
 models/hp_shared/textures/concrete/concrete_01/concrete_01_dif.atx2
+models/hp_shared/textures/concrete/concrete_01/concrete_01_glo.atx1
+models/hp_shared/textures/concrete/concrete_01/concrete_01_glo.atx2
 models/hp_shared/textures/concrete/concrete_02/concrete_02_dif.atx1
 models/hp_shared/textures/concrete/concrete_02/concrete_02_dif.atx2
 models/hp_shared/textures/concrete/concrete_02/concrete_02_mpm.atx1
@@ -147,6 +152,8 @@ models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_alpha_nrm.atx1
 models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_alpha_nrm.atx2
 models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_dif.atx1
 models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_dif.atx2
+models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_glo.atx1
+models/hp_shared/textures/concrete/concrete_set/concrete_mossy_01_glo.atx2
 models/hp_shared/textures/decals/leaking/decal_leaking_01_alpha_msk.atx1
 models/hp_shared/textures/decals/leaking/decal_leaking_01_alpha_msk.atx2
 models/hp_shared/textures/decals/stains/decals_stains_01.atx1
@@ -160,6 +167,8 @@ models/hp_shared/textures/glass/glass_window_01/glass_window_01_alpha_dif.atx1
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_alpha_dif.atx2
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_dif.atx1
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_dif.atx2
+models/hp_shared/textures/glass/glass_window_01/glass_window_01_glo.atx1
+models/hp_shared/textures/glass/glass_window_01/glass_window_01_glo.atx2
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_mpm.atx1
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_mpm.atx2
 models/hp_shared/textures/glass/glass_window_01/glass_window_01_nrm.atx1
@@ -181,6 +190,7 @@ models/hp_shared/textures/metal/metal_barbed_wire_01/metal_barbed_wire_01_glo.at
 models/hp_shared/textures/metal/metal_barbed_wire_01/metal_barbed_wire_01_nrm.atx1
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_dif.atx1
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_dif.atx2
+models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_glo.atx1
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_mpm.atx1
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_mpm.atx2
 models/hp_shared/textures/metal/metal_diamond_plate_01/metal_diamond_plate_rusty_01_nrm.atx1
@@ -189,6 +199,8 @@ models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_al
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_alpha_nrm.atx2
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_dif.atx1
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_dif.atx2
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_glo.atx1
+models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_glo.atx2
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_mpm.atx1
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_mpm.atx2
 models/hp_shared/textures/metal/metal_painted_white_01/metal_painted_white_01_nrm.atx1
@@ -215,6 +227,7 @@ models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_alpha_mpm.atx1
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_alpha_mpm.atx2
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_dif.atx1
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_dif.atx2
+models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_glo.atx1
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_mpm.atx1
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_mpm.atx2
 models/hp_shared/textures/metal/metal_rust_01/metal_rust_01_nrm.atx1
@@ -233,6 +246,8 @@ models/hp_shared/textures/plastic/plastic_base_01/plastic_base_01_nrm.atx1
 models/hp_shared/textures/plastic/plastic_base_01/plastic_base_01_nrm.atx2
 models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_dif.atx1
 models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_dif.atx2
+models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_glo.atx1
+models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_glo.atx2
 models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_mpm.atx1
 models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_mpm.atx2
 models/hp_shared/textures/roof/roof_tiles_02/roof_tiles_02_nrm.atx1
@@ -246,8 +261,12 @@ models/hp_shared/textures/stone/plaster_old_01/plaster_old_01_smooth_dif.atx1
 models/hp_shared/textures/stone/plaster_old_01/plaster_old_01_smooth_nrm.atx1
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_alpha_mpm.atx1
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_alpha_mpm.atx2
+models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_alpha_nrm.atx1
+models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_alpha_nrm.atx2
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_dif.atx1
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_dif.atx2
+models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_glo.atx1
+models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_glo.atx2
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_nrm.atx1
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_01_nrm.atx2
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_02_alpha_mpm.atx1
@@ -258,12 +277,16 @@ models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_02_nrm.atx1
 models/hp_shared/textures/stone/stone_bricks_01/stone_bricks_02_nrm.atx2
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_dif.atx1
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_dif.atx2
+models/hp_shared/textures/wood/wood_base_01/wood_base_01_glo.atx1
+models/hp_shared/textures/wood/wood_base_01/wood_base_01_glo.atx2
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_mpm.atx1
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_mpm.atx2
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_nrm.atx1
 models/hp_shared/textures/wood/wood_base_01/wood_base_01_nrm.atx2
 models/hp_shared/textures/wood/wood_base_02/wood_base_02_dif.atx1
 models/hp_shared/textures/wood/wood_base_02/wood_base_02_dif.atx2
+models/hp_shared/textures/wood/wood_base_02/wood_base_02_glo.atx1
+models/hp_shared/textures/wood/wood_base_02/wood_base_02_glo.atx2
 models/hp_shared/textures/wood/wood_base_02/wood_base_02_mpm.atx1
 models/hp_shared/textures/wood/wood_base_02/wood_base_02_mpm.atx2
 models/hp_shared/textures/wood/wood_base_02/wood_base_02_nrm.atx1
@@ -274,8 +297,12 @@ models/hp_shared/textures/wood/wood_beam_old_01/textures/wood_beam_old_01_mpm.at
 models/hp_shared/textures/wood/wood_beam_old_01/textures/wood_beam_old_01_mpm.atx2
 models/hp_shared/textures/wood/wood_beam_old_01/textures/wood_beam_old_01_nrm.atx1
 models/hp_shared/textures/wood/wood_beam_old_01/textures/wood_beam_old_01_nrm.atx2
+models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_alpha_dif.atx1
+models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_alpha_dif.atx2
 models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_dif.atx1
 models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_dif.atx2
+models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_glo.atx1
+models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_glo.atx2
 models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_mpm.atx1
 models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_mpm.atx2
 models/hp_shared/textures/wood/wood_ends_01/wood_ends_01_nrm.atx1

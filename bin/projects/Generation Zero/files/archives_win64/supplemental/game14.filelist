@@ -1,4 +1,4 @@
-; 439/540 (81%)
+; 443/540 (82%)
 models/weapons/weapon_glock_01/textures/weapon_glock_grade_2_01_dif.atx2
 models/weapons/weapon_glock_01/textures/weapon_glock_grade_2_01_mpm.atx2
 models/weapons/weapon_glock_01/textures/weapon_glock_grade_2_01_nrm.atx2
@@ -197,6 +197,7 @@ textures/decals/soot_explosion_large_01_mpm.atx2
 textures/decals/soot_explosion_large_01_nrm.atx1
 textures/decals/soot_explosion_large_01_nrm.atx2
 textures/decals/soot_explosion_medium_01_alpha_dif.atx1
+textures/decals/soot_explosion_medium_01_mpm.atx1
 textures/decals/soot_explosion_medium_01_nrm.atx1
 textures/decals/soot_explosion_small_01_alpha_dif.atx1
 textures/decals/soot_explosion_small_01_mpm.atx1
@@ -258,10 +259,12 @@ textures/dummies/dummy_skyscraper_texture_dif.atx1
 textures/dummies/dummy_zero_alpha_dif.atx1
 textures/dummies/metergrid.atx1
 textures/hp_clues/blood_01_alpha_dif.atx1
+textures/hp_clues/blood_01_mpm.atx1
 textures/hp_clues/blood_01_nrm.atx1
 textures/hp_clues/blood_02_alpha_dif.atx1
 textures/hp_clues/blood_04_alpha_dif.atx1
 textures/hp_clues/blood_04_alpha_dif.ddsc
+textures/hp_clues/blood_04_dif.atx1
 textures/hp_clues/blood_04_mpm.atx1
 textures/hp_clues/blood_04_mpm.ddsc
 textures/hp_clues/blood_04_nrm.atx1
@@ -397,6 +400,7 @@ textures/roads/asphalt/asphalt_grunge_02_alpha_mpm.atx2
 textures/roads/asphalt/asphalt_grunge_03.atx1
 textures/roads/asphalt/asphalt_markings_01.atx1
 textures/roads/asphalt/asphalt_markings_01_alpha_mpm.atx1
+textures/roads/asphalt/asphalt_markings_01_dif.atx1
 textures/roads/asphalt/asphalt_markings_02.atx1
 textures/roads/asphalt/asphalt_markings_02_alpha_mpm.atx1
 textures/roads/asphalt/dirt_track_edge_01_mpm.atx1

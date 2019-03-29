@@ -1,4 +1,4 @@
-; 1513/2219 (68%)
+; 1536/2219 (69%)
 terrain/hp/patches/patch_10_02_17.streampatch
 terrain/hp/patches/patch_10_02_18.streampatch
 terrain/hp/patches/patch_10_02_19.streampatch
@@ -1288,6 +1288,7 @@ textures/atmosphere/sky.ddsc
 textures/atmosphere/skygradient_dif.ddsc
 textures/atmosphere/star_dif.ddsc
 textures/atmosphere/sun_alpha_dif.ddsc
+textures/atmosphere/sun_gradient_alpha_dif.ddsc
 textures/atmosphere/tables/inscattering_clearsky.ddsc
 textures/atmosphere/tables/inscattering_default.ddsc
 textures/atmosphere/tables/inscattering_partlycloudy.ddsc
@@ -1306,7 +1307,14 @@ textures/bullet_trail_new_dif.ddsc
 textures/bullet_trail_nrm.ddsc
 textures/car_dirt.ddsc
 textures/cloudshadows.ddsc
+textures/color_curves/color_correction_africa_day.ddsc
+textures/color_curves/color_correction_africa_night.ddsc
+textures/color_curves/color_correction_africa_sunset.ddsc
 textures/color_curves/color_correction_calibration_v01.ddsc
+textures/color_curves/color_correction_calibration_v02.ddsc
+textures/color_curves/color_correction_calibration_v03.ddsc
+textures/color_curves/color_correction_calibration_v04.ddsc
+textures/color_curves/color_correction_calibration_v05.ddsc
 textures/color_curves/color_correction_neutral.ddsc
 textures/color_curves/color_correction_neutral_exposure.ddsc
 textures/color_curves/color_correction_oppressed.ddsc
@@ -1437,9 +1445,14 @@ textures/gui/context/mm_temp_ps3_ls_left.ddsc
 textures/gui/context/mm_temp_ps3_ls_right.ddsc
 textures/gui/context/mm_temp_ps3_square.ddsc
 textures/hp_ai_textures/bitmaps/animal_forbidden_map_0.ddsc
+textures/hp_clues/blood_04_alpha_dif.ddsc
+textures/hp_clues/blood_04_mpm.ddsc
+textures/hp_clues/blood_04_nrm.ddsc
 textures/hp_clues/clues_track_01_alpha_dif.ddsc
 textures/hp_clues/clues_track_01_mpm.ddsc
 textures/hp_clues/clues_track_01_nrm.ddsc
+textures/hp_clues/track_direction_marker_large_alpha_dif.ddsc
+textures/hp_clues/track_direction_marker_medium_alpha_dif.ddsc
 textures/hp_clues/track_direction_marker_mpm.ddsc
 textures/hp_clues/track_direction_marker_nrm.ddsc
 textures/hp_clues/track_direction_marker_small_alpha_dif.ddsc
@@ -1450,6 +1463,8 @@ textures/charactereyescube_v3_dif.ddsc
 textures/landscape/foliage_wind_noise.ddsc
 textures/landscape/forest_normal_displacement.ddsc
 textures/landscape/forestfin_dif.ddsc
+textures/landscape/gust_map_cpu.bmpc
+textures/landscape/gust_map_gpu.ddsc
 textures/landscape/texture_info.bin
 textures/laser/laser_pack.ddsc
 textures/laser/laser_ramp_mask.ddsc
@@ -1471,6 +1486,8 @@ textures/reference/ref_image_0.ddsc
 textures/reference/ref_image_1.ddsc
 textures/reference/ref_image_2.ddsc
 textures/ripple_alpha_mpm.ddsc
+textures/roads/asphalt/asphalt_01_alpha_mpm.ddsc
+textures/roads/asphalt/asphalt_01_dif.ddsc
 textures/roads/asphalt/asphalt_damage_01_alpha.ddsc
 textures/roads/asphalt/asphalt_damage_01_alpha_mpm.ddsc
 textures/roads/asphalt/asphalt_damage_02_alpha.ddsc
@@ -1512,3 +1529,9 @@ textures/roads/asphalt/road_dummy.ddsc
 textures/roads/decal_arrow_alpha_dif.ddsc
 textures/roads/dirt_road/dirt_road_001_alpha_dif.ddsc
 textures/roads/dirt_road/dirt_road_001_alpha_mpm.ddsc
+textures/roads/dirt_road/dirt_road_edge_01_mpm.ddsc
+textures/roads/dirt_road/dirt_road_gravel_01_alpha_mpm.ddsc
+textures/roads/dirt_road/dirt_road_gravel_01_dif.ddsc
+textures/roads/dirt_road/dirt_road_gravel_02_dif.ddsc
+textures/roads/dirt_road/dirt_road_grunge_01_alpha.ddsc
+textures/roads/dirt_road/dirt_road_grunge_01_alpha_mpm.ddsc

@@ -1,4 +1,4 @@
-; 242/254 (95%)
+; 243/254 (95%)
 models/weapon_attachments/handgun_scope_2_4x_20mm_01/textures/handgun_scope_2_4x_20mm_grade_5_01_nrm.atx2
 models/weapon_attachments/lens_attachment_01/textures/lens_attachment_dif.atx2
 models/weapon_attachments/lens_attachment_01/textures/lens_attachment_mpm.atx2
@@ -58,6 +58,7 @@ models/weapon_attachments/rifle_scope_4-8x_32mm_01/textures/rifle_scope_4-8x_32m
 models/weapon_attachments/rifle_scope_4-8x_32mm_01/textures/rifle_scope_4-8x_32mm_grade_5_01_nrm.atx2
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_dif.atx2
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_mpm.atx2
+models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_1_01_nrm.atx2
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_dif.atx2
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_mpm.atx2
 models/weapon_attachments/rifle_scope_4-8x_42mm_01/textures/rifle_scope_4-8x_42mm_grade_2_01_nrm.atx2

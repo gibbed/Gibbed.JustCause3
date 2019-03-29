@@ -1,4 +1,4 @@
-; 378/565 (66%)
+; 385/565 (68%)
 models/equipment/car_battery_01/textures/car_battery_01_dif.atx1
 models/equipment/car_battery_01/textures/car_battery_01_dif.atx2
 models/equipment/car_battery_01/textures/car_battery_01_mpm.atx1
@@ -136,6 +136,7 @@ models/equipment/tracking_device_01/textures/tracking_device_01_mpm.atx1
 models/equipment/tracking_device_01/textures/tracking_device_01_nrm.atx1
 models/hp_ammunition/shotgun_shell/textures/shotgun_shell_01_alpha_nrm.atx1
 models/hp_ammunition/shotgun_shell/textures/shotgun_shell_01_dif.atx1
+models/hp_ammunition/shotgun_shell/textures/shotgun_shell_01_glo.atx1
 models/hp_ammunition/textures/ammo_atlas_01_dif.atx1
 models/hp_ammunition/textures/ammo_atlas_01_dif.atx2
 models/hp_ammunition/textures/ammo_atlas_01_mpm.atx1
@@ -144,6 +145,8 @@ models/hp_ammunition/textures/ammo_atlas_01_nrm.atx1
 models/hp_ammunition/textures/ammo_atlas_01_nrm.atx2
 models/hp_equipment/binoculars_01/textures/binoculars_01_dif.atx1
 models/hp_equipment/binoculars_01/textures/binoculars_01_dif.atx2
+models/hp_equipment/binoculars_01/textures/binoculars_01_glo.atx1
+models/hp_equipment/binoculars_01/textures/binoculars_01_glo.atx2
 models/hp_equipment/binoculars_01/textures/binoculars_01_mpm.atx1
 models/hp_equipment/binoculars_01/textures/binoculars_01_mpm.atx2
 models/hp_equipment/binoculars_01/textures/binoculars_01_nrm.atx1
@@ -186,9 +189,11 @@ models/hp_characters/animals/fallow_deer/fallow_deer_footprint_01_mpm.ddsc
 models/hp_characters/animals/fallow_deer/fallow_deer_footprint_01_nrm.atx1
 models/hp_characters/animals/fallow_deer/fallow_deer_footprint_01_nrm.ddsc
 models/hp_characters/critters/common_gull/maps/common_gull_alpha_dif.atx1
+models/hp_characters/critters/common_gull/maps/common_gull_dif.atx1
 models/hp_characters/critters/common_gull/maps/common_gull_mpm.atx1
 models/hp_characters/critters/common_gull/maps/common_gull_nrm.atx1
 models/hp_characters/critters/raven/maps/raven_alpha_dif.atx1
+models/hp_characters/critters/raven/maps/raven_dif.atx1
 models/hp_characters/critters/raven/maps/raven_mpm.atx1
 models/hp_characters/critters/raven/maps/raven_nrm.atx1
 models/hp_manmade/buildings/barns/textures/barn_pnw_01_wood_planks_01_frame_01_tint.atx1
@@ -290,7 +295,9 @@ models/hp_manmade/buildings/cabins/textures/roof_tiles_01_nrm.atx2
 models/hp_manmade/buildings/cabins/textures/roof_tiles_02_dif.atx1
 models/hp_manmade/buildings/cabins/textures/roof_tiles_02_dif.atx2
 models/hp_manmade/buildings/cabins/textures/windows_01_alpha_dif.atx1
+models/hp_manmade/buildings/cabins/textures/windows_01_dif.atx1
 models/hp_manmade/buildings/cabins/textures/windows_01_mpm.atx1
+models/hp_manmade/buildings/cabins/textures/wood_painted_01_dif.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_01_mpm.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_01_nrm.atx1
 models/hp_manmade/buildings/cabins/textures/wood_painted_02_dif.atx1
