@@ -90,11 +90,11 @@ locations/region_03/military/power_plant_01/power_plant_01_lights.nl
 locations/region_03/military/power_plant_01/power_plant_01_main.fl
 locations/region_03/military/power_plant_01/power_plant_01_main.nl
 locations/region_03/military/power_plant_01/power_plant_01_main.stringlookup
+locations/region_03/military/power_plant_01/power_plant_01_main_combat.nl
+locations/region_03/military/power_plant_01/power_plant_01_main_combat.stringlookup
 locations/region_03/military/power_plant_01/power_plant_01_main_chaos.fl
 locations/region_03/military/power_plant_01/power_plant_01_main_chaos.nl
 locations/region_03/military/power_plant_01/power_plant_01_main_chaos.stringlookup
-locations/region_03/military/power_plant_01/power_plant_01_main_combat.nl
-locations/region_03/military/power_plant_01/power_plant_01_main_combat.stringlookup
 locations/region_03/military/power_plant_01/power_plant_01_main_liberated.nl
 locations/region_03/military/power_plant_01/power_plant_01_smoke_stacks.fl
 locations/region_03/military/power_plant_01/power_plant_01_smoke_stacks.nl

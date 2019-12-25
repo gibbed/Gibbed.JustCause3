@@ -103,14 +103,14 @@ locations/region_01/missions/mm160/mm160_main_props.bl
 locations/region_01/missions/mm160/mm160_start.nl
 locations/region_01/missions/mm170/mm170_call.bl
 locations/region_01/missions/mm170/mm170_call.stringlookup
-locations/region_01/missions/mm170/mm170_checkpoint1.bl
-locations/region_01/missions/mm170/mm170_checkpoint2.bl
 locations/region_01/missions/mm170/mm170_csa.bl
 locations/region_01/missions/mm170/mm170_csa.stringlookup
 locations/region_01/missions/mm170/mm170_csb.bl
 locations/region_01/missions/mm170/mm170_csb.stringlookup
 locations/region_01/missions/mm170/mm170_csc.bl
 locations/region_01/missions/mm170/mm170_csc.stringlookup
+locations/region_01/missions/mm170/mm170_checkpoint1.bl
+locations/region_01/missions/mm170/mm170_checkpoint2.bl
 locations/region_01/missions/mm170/mm170_main.bl
 locations/region_01/missions/mm170/mm170_main.stringlookup
 locations/region_01/missions/mm170/mm170_start.nl

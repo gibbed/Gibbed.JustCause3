@@ -1,4 +1,4 @@
-; 148/4147 (3%)
+; 149/4147 (3%)
 climate/terrainsystem.terrainsystemc
 dlc/mech_land_assault/models/jc_environment/props/chaos_surveillance_camera/textures/chaos_surveillance_camera_mask.hmddsc
 dlc/mech_land_assault/models/jc_environment/props/chaos_surveillance_camera/textures/sf_mechanical_survcam_dif.hmddsc
@@ -109,6 +109,7 @@ dlc/mech_land_assault/models/jc_characters/prisoners/textures/dlc_prisoner_rebel
 dlc/mech_land_assault/models/jc_characters/prisoners/textures/dlc_prisoner_rebel_shirt_nrm.hmddsc
 dlc/mech_land_assault/models/jc_characters/prisoners/textures/dlc_prisoner_rebel_teeshirt_dif.hmddsc
 dlc/mech_land_assault/models/jc_characters/prisoners/textures/dlc_vip_prisoner_body_01_dif.hmddsc
+models/jc_environments/structures/military/radar/textures/vedetta_tower_spire_large_proxy_glo.ddsc
 terrain/global_heightfield.rawc
 terrain/jc3/jc3.world
 terrain/jc3/terrain.occludersc

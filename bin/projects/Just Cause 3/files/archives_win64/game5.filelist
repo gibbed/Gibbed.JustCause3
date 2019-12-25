@@ -350,13 +350,13 @@ scripts/camera/helicopter_camera.xvmc
 scripts/camera/vehicle_submarine_camera.xvmc
 scripts/modules/animation.xvmc
 scripts/modules/camera.xvmc
-scripts/modules/character.xvmc
 scripts/modules/collision.xvmc
 scripts/modules/debug.xvmc
 scripts/modules/effect.xvmc
 scripts/modules/game.xvmc
 scripts/modules/golist.xvmc
 scripts/modules/gui.xvmc
+scripts/modules/character.xvmc
 scripts/modules/input.xvmc
 scripts/modules/math.xvmc
 scripts/modules/matrix.xvmc
@@ -372,7 +372,6 @@ settings/ammunition.bin
 settings/asset_areas_color_info.bin
 settings/asset_memory_budgets.bin
 settings/camera_debugger.bin
-settings/charactertypes.bin
 settings/collectitemtypes.bin
 settings/crowd_voiceover.bin
 settings/damage_types.bin
@@ -380,6 +379,7 @@ settings/effects_budget_pools.bin
 settings/enemytypespawnsettings.bin
 settings/game_materials_all_asphalt.bin
 settings/grassbillboards.bin
+settings/charactertypes.bin
 settings/keymap_keyboard.bin
 settings/lightenumbike.bin
 settings/lightenumboat.bin
@@ -402,10 +402,10 @@ settings/vehicletackleparams.bin
 settings/vehicletypes.bin
 settings/voice_over_definitions.bin
 settings/worldsim.bin
-sound/dialogue/chopshop.stringlookup
-sound/dialogue/chopshop.vocalsc
 sound/dialogue/heat.stringlookup
 sound/dialogue/heat.vocalsc
+sound/dialogue/chopshop.stringlookup
+sound/dialogue/chopshop.vocalsc
 sound/dialogue/propaganda_pa.stringlookup
 sound/dialogue/propaganda_pa.vocalsc
 sound/fmod_banks/master.banklist
@@ -767,15 +767,13 @@ textures/bullet_tracer_dif.ddsc
 textures/bullet_trail_new_dif.ddsc
 textures/bullet_trail_nrm.ddsc
 textures/car_dirt.ddsc
-textures/charactereyescube_dif.ddsc
-textures/charactereyescube_v2_dif.ddsc
 textures/cloudshadows.ddsc
 textures/decals/blood_skin_splat_dif.ddsc
+textures/decals/blood_splatter_dif.ddsc
 textures/decals/blood_splatter_character_dif.ddsc
 textures/decals/blood_splatter_character_mpm.ddsc
 textures/decals/blood_splatter_character_nrm.ddsc
 textures/decals/blood_splatter_character_spc.ddsc
-textures/decals/blood_splatter_dif.ddsc
 textures/decals/blood_splatter_mpm.ddsc
 textures/decals/blood_splatter_nrm.ddsc
 textures/decals/blood_splatter_smear_dif.ddsc
@@ -796,7 +794,6 @@ textures/decals/explosion_nrm.ddsc
 textures/decals/explosion_spc.ddsc
 textures/decals/footstep_dif.ddsc
 textures/decals/footstep_nrm.ddsc
-textures/dummies/checkers_dif.ddsc
 textures/dummies/dummy_0_6m.ddsc
 textures/dummies/dummy_1_2m.ddsc
 textures/dummies/dummy_1_8m.ddsc
@@ -804,8 +801,6 @@ textures/dummies/dummy_2_4m.ddsc
 textures/dummies/dummy_alpha_dif.ddsc
 textures/dummies/dummy_ao.ddsc
 textures/dummies/dummy_babyblue.ddsc
-textures/dummies/dummy_character_grey.ddsc
-textures/dummies/dummy_checker_alpha_dif.ddsc
 textures/dummies/dummy_dark_green_dif.ddsc
 textures/dummies/dummy_darkgrey.ddsc
 textures/dummies/dummy_decal_alpha_dif.ddsc
@@ -818,6 +813,8 @@ textures/dummies/dummy_green_dif.ddsc
 textures/dummies/dummy_grey_dif.ddsc
 textures/dummies/dummy_grey_mpm.ddsc
 textures/dummies/dummy_gym_texture_dif.ddsc
+textures/dummies/dummy_character_grey.ddsc
+textures/dummies/dummy_checker_alpha_dif.ddsc
 textures/dummies/dummy_layered_glo.ddsc
 textures/dummies/dummy_layered_nrm.ddsc
 textures/dummies/dummy_mask.ddsc
@@ -856,6 +853,7 @@ textures/dummies/havok_deformation_dif.ddsc
 textures/dummies/havok_flexjoint_dif.ddsc
 textures/dummies/havok_fracture_dif.ddsc
 textures/dummies/havok_wood_dif.ddsc
+textures/dummies/checkers_dif.ddsc
 textures/dummies/metergrid.ddsc
 textures/dummies/red_temp.ddsc
 textures/dummies/swatches_dif.ddsc
@@ -873,6 +871,8 @@ textures/generic_iemcube_dif.ddsc
 textures/genericenvcube_with_point_lights_dif.ddsc
 textures/genericenvcubegrey_dif.ddsc
 textures/glossyenvcube_dif.ddsc
+textures/charactereyescube_dif.ddsc
+textures/charactereyescube_v2_dif.ddsc
 textures/landscape/forestfin_dif.ddsc
 textures/landscape/horizon_10.ddsc
 textures/landscape/horizon_11.ddsc
@@ -1626,7 +1626,6 @@ textures/wire_mpm.ddsc
 textures/wire_nrm.ddsc
 ui/_generic.dds
 ui/_generic.gnf
-ui/chopshop.png.dds
 ui/comm_brags_feats.gfx
 ui/comm_brags_feats_i26.dds
 ui/comm_brags_feats_ia2.dds
@@ -1670,6 +1669,7 @@ ui/hud_i5d.dds
 ui/hud_i61.dds
 ui/hud_i78.dds
 ui/hud_i88.dds
+ui/chopshop.png.dds
 ui/intro_i8.dds
 ui/load.gfx
 ui/load_i6.dds

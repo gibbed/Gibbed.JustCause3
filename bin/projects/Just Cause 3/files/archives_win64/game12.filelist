@@ -188,8 +188,8 @@ editor/entities/jc_environments/props/elements/office_supplies/clipboard.ee
 editor/entities/jc_environments/props/elements/sea_mine/sea_mine.ee
 editor/entities/jc_environments/props/elements/weapon_drop_case/rebel_weapon_drop_case.ee
 editor/entities/jc_environments/props/military/ammo_caches/flare_crate.ee
-editor/entities/jc_environments/props/military/chainlink_fence/barbed_wire_4m.ee
 editor/entities/jc_environments/props/military/flatbed/flatbed.ee
+editor/entities/jc_environments/props/military/chainlink_fence/barbed_wire_4m.ee
 editor/entities/jc_environments/props/modern/elements/sponge_01/sponge.ee
 editor/entities/jc_environments/structures/industrial/stairs_a/industrial_stair_railing_40_deg_white.ee
 editor/entities/jc_environments/structures/infrastructure/guard_rail_b/guard_rail_b_4m.ee
@@ -735,7 +735,6 @@ locations/world_locations/easteregg_monorail_town_locations/monorail_dot_03_ogde
 locations/world_locations/easteregg_monorail_town_locations/monorail_dot_03_ogdenville.nl
 locations/world_locations/test/test_animation_vehicle_part.bl
 models/jc_aero/parachute/variants/debug/parachute_var_debug_lod1.rbm
-models/jc_characters/main_characters/rico/variants/debug/rico_var_debug_lod1.rbm
 models/jc_cinematics/props/textures/time_travel_tunnel.hmddsc
 models/jc_environments/props/animation_prop/textures/bucket_dif.hmddsc
 models/jc_environments/props/animation_prop/textures/bucket_glo.hmddsc
@@ -800,6 +799,7 @@ models/jc_environments/structures/infrastructure/railroad/train_tunnel/metals_nr
 models/jc_environments/structures/military/elements/sam_spotlights/textures/sam_light_alpha_dif.hmddsc
 models/jc_environments/structures/military/elements/sam_spotlights/textures/sam_light_dif.hmddsc
 models/jc_environments/structures/rural/shared/textures/atlas_wall_retaining_01_mpm.hmddsc
+models/jc_characters/main_characters/rico/variants/debug/rico_var_debug_lod1.rbm
 models/jc_weapons/01_one_handed/w012_pistol_cs_spectre_mark_v/textures/w012_pistol_cs_spectre_mark_v_dif.hmddsc
 models/jc_weapons/01_one_handed/w012_pistol_cs_spectre_mark_v/textures/w012_pistol_cs_spectre_mark_v_glo.hmddsc
 models/jc_weapons/01_one_handed/w012_pistol_cs_spectre_mark_v/textures/w012_pistol_cs_spectre_mark_v_met.hmddsc
