@@ -28,9 +28,6 @@ locations/region_03/capital_city/capital_city_ai.nl
 locations/region_03/capital_city/capital_city_ai_liberated.nl
 locations/region_03/capital_city/capital_city_ai_oppressed.nl
 locations/region_03/capital_city/capital_city_ao_volumes.nl
-locations/region_03/capital_city/capital_city_chaos.fl
-locations/region_03/capital_city/capital_city_chaos.nl
-locations/region_03/capital_city/capital_city_chaos.stringlookup
 locations/region_03/capital_city/capital_city_downtown_01.fl
 locations/region_03/capital_city/capital_city_downtown_01.nl
 locations/region_03/capital_city/capital_city_downtown_01.stringlookup
@@ -65,6 +62,9 @@ locations/region_03/capital_city/capital_city_hills_01_ai.fl
 locations/region_03/capital_city/capital_city_hills_01_ai.nl
 locations/region_03/capital_city/capital_city_hills_01_lights.fl
 locations/region_03/capital_city/capital_city_hills_01_lights.nl
+locations/region_03/capital_city/capital_city_chaos.fl
+locations/region_03/capital_city/capital_city_chaos.nl
+locations/region_03/capital_city/capital_city_chaos.stringlookup
 locations/region_03/capital_city/capital_city_industrial_01.fl
 locations/region_03/capital_city/capital_city_industrial_01.nl
 locations/region_03/capital_city/capital_city_industrial_01_ai_liberated.nl

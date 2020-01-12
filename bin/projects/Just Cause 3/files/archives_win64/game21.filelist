@@ -1,14 +1,4 @@
 ; 476/476 (100%)
-models/jc_characters/main_characters/zeno/textures/zeno_clothes_nrm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_hair_mpm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_hands_dif.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_hands_mpm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_hands_nrm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_new_hair_alpha_dif.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_new_hair_nrm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_skin_dif.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_skin_mpm.hmddsc
-models/jc_characters/main_characters/zeno/textures/zeno_skin_nrm.hmddsc
 models/jc_cinematics/characters/dimah/dimah_cin_body_lod1.rbm
 models/jc_cinematics/characters/diravello/diravello_cin_body_lod1.rbm
 models/jc_cinematics/characters/luciano/luciano_cin_body_lod1.rbm
@@ -191,9 +181,6 @@ models/jc_environments/props/military/ammo_caches/textures/ammo_cache_wood_nrm.h
 models/jc_environments/props/military/ammo_caches/textures/flare_crate_dif.hmddsc
 models/jc_environments/props/military/ammo_caches/textures/flare_crate_glo.hmddsc
 models/jc_environments/props/military/ammo_caches/textures/flare_crate_nrm.hmddsc
-models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_alpha_dif.hmddsc
-models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_glo.hmddsc
-models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_nrm.hmddsc
 models/jc_environments/props/military/flag/textures/flag_sign_a_diff.hmddsc
 models/jc_environments/props/military/flag/textures/flag_sign_a_glo.hmddsc
 models/jc_environments/props/military/flag/textures/flag_sign_a_met.hmddsc
@@ -213,6 +200,9 @@ models/jc_environments/props/military/generator_lg_01/textures/generator_lg_b_mp
 models/jc_environments/props/military/generator_lg_01/textures/generator_lrg_01_dif.hmddsc
 models/jc_environments/props/military/generator_lg_01/textures/generator_lrg_01_mpm.hmddsc
 models/jc_environments/props/military/generator_lg_01/textures/generator_lrg_01_nrm.hmddsc
+models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_alpha_dif.hmddsc
+models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_glo.hmddsc
+models/jc_environments/props/military/chainlink_fence/textures/barbed_wire_straight_nrm.hmddsc
 models/jc_environments/props/modern/civilian_washing_lines_set_a/textures/civilian_washing_lines_set_a_01_dif.hmddsc
 models/jc_environments/props/modern/civilian_washing_lines_set_a/textures/civilian_washing_lines_set_a_01_glo.hmddsc
 models/jc_environments/props/modern/civilian_washing_lines_set_a/textures/civilian_washing_lines_set_a_01_met.hmddsc
@@ -475,3 +465,13 @@ models/jc_environments/shared/textures/concrete/concrete_floor_01_d_dmg_nrm.hmdd
 models/jc_environments/shared/textures/concrete/concrete_floor_02_a_clean_dif.hmddsc
 models/jc_environments/shared/textures/concrete/concrete_floor_02_a_clean_glo.hmddsc
 models/jc_environments/shared/textures/concrete/concrete_floor_02_a_clean_nrm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_clothes_nrm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_hair_mpm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_hands_dif.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_hands_mpm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_hands_nrm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_new_hair_alpha_dif.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_new_hair_nrm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_skin_dif.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_skin_mpm.hmddsc
+models/jc_characters/main_characters/zeno/textures/zeno_skin_nrm.hmddsc

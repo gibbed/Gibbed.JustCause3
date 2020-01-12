@@ -970,11 +970,6 @@ ai/tiles/62_26.navmeshc
 ai/tiles/62_27.navmeshc
 ai/tiles/62_28.navmeshc
 ai/tiles/62_29.navmeshc
-animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_010.ban
-animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_020.ban
-animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_030.ban
-animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_040.ban
-animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_050.ban
 animations/jc_cinematics/act3/mm310_csa/animations/0000_mm310_csa__char_mario.ban
 animations/jc_cinematics/act3/mm310_csa/animations/0000_mm310_csa__char_rico.ban
 animations/jc_cinematics/act3/mm310_csb02/animations/0000_mm310_csb02__char_dimah.ban
@@ -998,6 +993,11 @@ animations/jc_cinematics/act3/mm360_csb/animations/0000_mm360_csb__char_dimah.ba
 animations/jc_cinematics/act3/mm360_csb/animations/0000_mm360_csb__char_rico.ban
 animations/jc_cinematics/act3/mm400_csa/animations/0000_mm400_csa__char_rico.ban
 animations/jc_cinematics/act3/mm400_csb_part1/animations/0000_mm400_csb_part1__char_diravello.ban
+animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_010.ban
+animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_020.ban
+animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_030.ban
+animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_040.ban
+animations/jc_characters/dialogue/archive/eng/mission_mm400_dial_overlook_050.ban
 editor/entities/jc_environments/structures/military/elements/antennas/antenna_base.ee
 editor/entities/jc_environments/structures/rural/platform_a/rural_platform_a_01_railing_base.ee
 graphs/cinematics/mm310_csb_cine.gdc

@@ -1,0 +1,11 @@
+; 10/25 (40%)
+climate/hp_pacific_northwest/common/tree_diffuse_atlas_0.ddsc
+climate/hp_pacific_northwest/common/tree_normal_atlas_0.ddsc
+climate/hp_pacific_northwest/common/treeimpostors.gadfc
+climate/hp_pacific_northwest/terrainsystem.terrainsystemc
+climate/hp_pacific_northwest/vegetation.vegetationinfo
+climate/hp_pacific_northwest/zone_0/diffuse_textures_mid_0_0.ddsc
+climate/hp_pacific_northwest/zone_0/diffuse_textures_near_0_0.ddsc
+climate/hp_pacific_northwest/zone_0/height_textures_mid_0_0.ddsc
+climate/hp_pacific_northwest/zone_0/height_textures_near_0_0.ddsc
+climate/hp_pacific_northwest/zone_0/normal_textures_mid_0_0.ddsc

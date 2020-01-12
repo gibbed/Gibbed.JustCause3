@@ -69,6 +69,8 @@ global/waterroadgraph.roadgraphc
 global/weapons.bl
 locations/world.bin
 missions/missions.bl
+models/jc_environments/structures/military/buildings/building_24x32m_a_base_lod1.rbm
+models/jc_environments/structures/rural/core_building_b/rural_core_building_b_01_lod1.rbm
 models/jc_characters/animals/critter_fish/critfish01_body_lod1.rbm
 models/jc_characters/animals/critter_fish/critfish02_body_lod1.rbm
 models/jc_characters/animals/critter_fish/critfish03_body_lod1.rbm
@@ -87,8 +89,6 @@ models/jc_characters/animals/seagull/seagull_wing_l_lod1.rbm
 models/jc_characters/animals/seagull/seagull_wing_r_lod1.rbm
 models/jc_characters/animals/seagull/textures/seagull_dif.ddsc
 models/jc_characters/animals/seagull/textures/seagull_nrm.ddsc
-models/jc_environments/structures/military/buildings/building_24x32m_a_base_lod1.rbm
-models/jc_environments/structures/rural/core_building_b/rural_core_building_b_01_lod1.rbm
 models/jc_props/vehicle_wrecks/v0508_car_solar_oldcompact_wreck/oldcompact_wreck_body_lod1.rbm
 models/jc_vehicles/00_shared/textures/damage2_alpha_nrm.ddsc
 models/jc_vehicles/00_shared/textures/vehicle_dirt_msk.ddsc
